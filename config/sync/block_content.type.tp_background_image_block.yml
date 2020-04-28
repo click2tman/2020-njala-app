@@ -1,0 +1,8 @@
+uuid: 8a64bb66-44c3-4161-abda-33737f5cf092
+langcode: en
+status: true
+dependencies: {  }
+id: tp_background_image_block
+label: 'Background Image Block'
+revision: 1
+description: 'Use this custom block type to create blocks with background images'

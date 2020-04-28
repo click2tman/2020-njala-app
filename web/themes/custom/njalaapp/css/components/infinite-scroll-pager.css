@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Styles for NjalaAPP's infinite scroll pager.
+ */
+.pager[data-drupal-views-infinite-scroll-pager] {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+.pager[data-drupal-views-infinite-scroll-pager] a.button {
+  margin-top: 0;
+}
+#block-views-block-tp-latest-posts-block-1 .pager[data-drupal-views-infinite-scroll-pager] {
+  margin-top: 30px;
+}
+.view-metro-tiles .pager[data-drupal-views-infinite-scroll-pager] {
+  margin-top: 30px;
+}

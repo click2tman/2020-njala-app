@@ -1,0 +1,28 @@
+uuid: 68088bfa-808b-428e-9d00-60ed9b28d4ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_and_staff
+    - node.type.academic_department
+    - node.type.faculty_and_staff
+id: node.academic_department.field_faculty_and_staff
+field_name: field_faculty_and_staff
+entity_type: node
+bundle: academic_department
+label: 'Faculty and Staff'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      faculty_and_staff: faculty_and_staff
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

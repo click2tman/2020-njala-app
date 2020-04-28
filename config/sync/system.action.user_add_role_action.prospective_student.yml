@@ -1,0 +1,14 @@
+uuid: a65449b9-91d6-49ad-84a2-5a0a46f8c404
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.prospective_student
+  module:
+    - user
+id: user_add_role_action.prospective_student
+label: 'Add the Prospective Student role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: prospective_student

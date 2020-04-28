@@ -1,0 +1,28 @@
+uuid: be7e7d88-d12a-4dc4-8975-07d03e99ef15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academic_programme
+    - node.type.academic_department
+    - node.type.academic_programs
+id: node.academic_department.field_academic_programme
+field_name: field_academic_programme
+entity_type: node
+bundle: academic_department
+label: 'Programmes Offered'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      academic_programs: academic_programs
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

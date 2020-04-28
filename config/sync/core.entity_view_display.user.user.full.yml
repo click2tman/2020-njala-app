@@ -1,0 +1,418 @@
+uuid: e22471cc-70a8-4495-b692-47b326ed646e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+    - field.field.user.user.field_user_first_name
+    - field.field.user.user.field_user_mobile_phone
+    - field.field.user.user.field_user_surname
+    - field.field.user.user.layout_builder__layout
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+    - views.view.my_webform_submissions
+  module:
+    - ctools_block
+    - image
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - layout_library
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 25-75
+        components:
+          3bc786bf-995b-456a-9ab2-1be296afc5f4:
+            uuid: 3bc786bf-995b-456a-9ab2-1be296afc5f4
+            region: first
+            configuration:
+              id: 'entity_field:user:user_picture'
+              label: Picture
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 0
+          f98a0891-2a3f-4233-81cb-4939a37c1c13:
+            uuid: f98a0891-2a3f-4233-81cb-4939a37c1c13
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_mobile_phone'
+              label: 'Mobile Phone'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: telephone_link
+                settings:
+                  title: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 6
+          1d6cc541-6be6-4c83-8412-e997c6ab4210:
+            uuid: 1d6cc541-6be6-4c83-8412-e997c6ab4210
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_first_name'
+              label: 'First Name'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          c68d7649-414f-4101-af0c-7b222b634e1d:
+            uuid: c68d7649-414f-4101-af0c-7b222b634e1d
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_surname'
+              label: Surname
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+          f15d276c-ad95-43bc-bb1c-d1ca4d0555a2:
+            uuid: f15d276c-ad95-43bc-bb1c-d1ca4d0555a2
+            region: second
+            configuration:
+              id: 'entity_field:user:mail'
+              label: Email
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: inline
+                type: basic_string
+                settings: {  }
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 7
+          0deebd8a-4d96-467c-9f9b-cf504ec889e1:
+            uuid: 0deebd8a-4d96-467c-9f9b-cf504ec889e1
+            region: second
+            configuration:
+              id: 'entity_field:user:login'
+              label: 'Last login'
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: inline
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 9
+          9e5d4963-63a6-4e24-ac7b-721de7ccf497:
+            uuid: 9e5d4963-63a6-4e24-ac7b-721de7ccf497
+            region: second
+            configuration:
+              id: 'entity_field:user:access'
+              label: 'Last access'
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: inline
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 10
+          2f0d27a8-6e27-462f-9ff1-b790f7df410c:
+            uuid: 2f0d27a8-6e27-462f-9ff1-b790f7df410c
+            region: second
+            configuration:
+              id: 'entity_field:user:created'
+              label: Created
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: inline
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 11
+          9599a084-3651-4c5c-80c0-7a892a87a598:
+            uuid: 9599a084-3651-4c5c-80c0-7a892a87a598
+            region: second
+            configuration:
+              id: 'entity_field:user:changed'
+              label: Changed
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: inline
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 12
+          4aab9c6d-04f8-450d-b62e-94716f55d2ab:
+            uuid: 4aab9c6d-04f8-450d-b62e-94716f55d2ab
+            region: second
+            configuration:
+              id: 'extra_field_block:user:user:member_for'
+              label: 'Member for'
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 14
+          4534a548-5b00-476f-a694-6a228f22d8f7:
+            uuid: 4534a548-5b00-476f-a694-6a228f22d8f7
+            region: second
+            configuration:
+              id: 'extra_field_block:user:user:realname'
+              label: 'Real name'
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 33-67
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 67-33
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 75-25
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          column_widths: 33-34-33
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          column_widths: 25-50-25
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          column_widths: 25-25-50
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          column_widths: 50-25-25
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          d5db2658-6c33-4c1e-92ee-3ababe63a0d4:
+            uuid: d5db2658-6c33-4c1e-92ee-3ababe63a0d4
+            region: content
+            configuration:
+              id: 'views_block:my_webform_submissions-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 25-75
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 75-25
+        components: {  }
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      allowed_blocks:
+        'Chaos tools': {  }
+        core: {  }
+        Custom: {  }
+        Flippy: {  }
+        Forms: {  }
+        Help: {  }
+        'Inline blocks': {  }
+        'Lists (Views)':
+          - 'views_block:academic_departments-block_1'
+          - 'views_block:academic_programmes-block_1'
+          - 'views_block:academic_schools-block_1'
+          - 'views_block:content_moderation_dashboard_in_review-block_2'
+          - 'views_block:content_moderation_dashboard_in_review-block_1'
+          - 'views_block:content_moderation_dashboard_in_review-block_3'
+          - 'views_block:moderation_dashboard_recent_changes-block_1'
+          - 'views_block:moderation_dashboard_recent_changes-block_2'
+          - 'views_block:moderation_dashboard_recently_created-block_2'
+          - 'views_block:moderation_dashboard_recently_created-block_1'
+          - 'views_block:my_webform_submissions-block_1'
+          - 'views_block:submitted_applications-block_2'
+          - 'views_block:who_s_online-who_s_online_block'
+        Menus: {  }
+        'Moderation Dashboard': {  }
+        System: {  }
+        User:
+          - 'entity_field:user:changed'
+          - 'entity_field:user:created'
+          - 'entity_field:user:mail'
+          - 'entity_field:user:field_user_first_name'
+          - 'entity_field:user:access'
+          - 'entity_field:user:login'
+          - 'entity_field:user:field_user_mobile_phone'
+          - 'entity_field:user:name'
+          - 'entity_field:user:pass'
+          - 'entity_field:user:user_picture'
+          - 'extra_field_block:user:user:member_for'
+          - 'extra_field_block:user:user:realname'
+          - 'entity_field:user:field_user_surname'
+          - 'entity_field:user:uid'
+        'User fields': {  }
+        Webform: {  }
+        'Webform access': {  }
+      allowed_layouts: {  }
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content:
+  field_user_first_name:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_user_mobile_phone:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_user_surname:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  member_for:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  layout_builder__layout: true
+  name: true
+  realname: true

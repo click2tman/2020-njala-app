@@ -1,0 +1,20 @@
+drupalchat_external_api_key: ''
+drupalchat_app_id: ''
+drupalchat_path_visibility: '0'
+drupalchat_path_pages: ''
+drupalchat_rel: 0
+drupalchat_ur_name: ''
+drupalchat_theme: light
+drupalchat_polling_method: 0
+drupalchat_notification_sound: 1
+drupalchat_user_picture: 1
+drupalchat_enable_smiley: 1
+drupalchat_log_messages: 1
+drupalchat_anon_use_name: 2
+drupalchat_user_latency: 30
+drupalchat_refresh_rate: 2
+drupalchat_anon_prefix: 'Prospective Student'
+drupalchat_enable_chatroom: 1
+drupalchat_session_caching: 2
+_core:
+  default_config_hash: v8uiMHqRzJRsOAv6suXVM89uZn9mELYgKryRWmkxkK0

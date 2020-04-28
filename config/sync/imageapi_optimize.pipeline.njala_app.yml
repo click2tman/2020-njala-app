@@ -1,0 +1,15 @@
+uuid: 302138e5-d579-4e2d-a57c-8c8a9ba98d70
+langcode: en
+status: true
+dependencies:
+  module:
+    - webp
+name: njala_app
+label: 'Njala App'
+processors:
+  4a44abbb-0a73-4cef-a2ca-de370d9869e7:
+    uuid: 4a44abbb-0a73-4cef-a2ca-de370d9869e7
+    id: webp_webp
+    weight: 1
+    data:
+      quality: '85'

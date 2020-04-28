@@ -1,0 +1,31 @@
+uuid: 6ac839dd-5857-4f2b-900f-7ca1e8374739
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f2ff43cf-9050-4d7e-a646-129f5ddda428'
+  module:
+    - block_content
+    - system
+  theme:
+    - njalaapp
+id: publicnotice
+theme: njalaapp
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:f2ff43cf-9050-4d7e-a646-129f5ddda428'
+settings:
+  id: 'block_content:f2ff43cf-9050-4d7e-a646-129f5ddda428'
+  label: 'Public Notice '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

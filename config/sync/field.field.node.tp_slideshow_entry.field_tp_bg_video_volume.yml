@@ -1,0 +1,25 @@
+uuid: eef547c8-41e5-4d20-b32a-3fdb498cf476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tp_bg_video_volume
+    - node.type.tp_slideshow_entry
+id: node.tp_slideshow_entry.field_tp_bg_video_volume
+field_name: field_tp_bg_video_volume
+entity_type: node
+bundle: tp_slideshow_entry
+label: 'Background Video Volume'
+description: 'Set the Volume of the Background Video from 0 to 100 (e.g. 50).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

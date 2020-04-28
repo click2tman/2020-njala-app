@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * NjalaAPP's theme implementation to display a Product node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('njalaapp/node-product') }}
+  {{ content }}
+{% endblock %}

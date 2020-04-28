@@ -1,0 +1,66 @@
+uuid: be2d50d4-51cd-46ba-bec9-590774a68792
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_programme_level
+field_name: field_programme_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Certificate
+      label: Certificate
+    -
+      value: Diploma
+      label: Diploma
+    -
+      value: 'Ordinary National Diploma'
+      label: 'Ordinary National Diploma'
+    -
+      value: 'Higher National Diploma'
+      label: 'Higher National Diploma'
+    -
+      value: Bachelors
+      label: Bachelors
+    -
+      value: Masters
+      label: Masters
+    -
+      value: PHD/Doctoral
+      label: PHD/Doctoral
+    -
+      value: 'Postgraduate Certificate'
+      label: 'Postgraduate Certificate'
+    -
+      value: 'Postgraduate Diploma'
+      label: 'Postgraduate Diploma'
+    -
+      value: 'Distance Learning Certificate'
+      label: 'Distance Learning Certificate'
+    -
+      value: 'Distance Learning Diploma'
+      label: 'Distance Learning Diploma'
+    -
+      value: 'Distance Learning Bachelors Degree'
+      label: 'Distance Learning Bachelors Degree'
+    -
+      value: 'Distance Learning Postgraduate Diploma'
+      label: 'Distance Learning Postgraduate Diploma'
+    -
+      value: 'Distance Learning'
+      label: 'Distance Learning'
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

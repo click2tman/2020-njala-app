@@ -1,0 +1,57 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * NjalaAPP's theme implementation to display a Team member node.
+ */
+#}
+{% block meta_area %}
+{% endblock %}
+{% block content %}
+  {{ attach_library('njalaapp/node-team-member') }}
+  <div class="row content">
+    {% if content.field_tp_member_photo|render %}
+      {{ attach_library('njalaapp/magnific-popup-field-member-photo-init') }}
+      <div class="col-lg-4">
+        <div class="photo-container">
+          {{ content.field_tp_member_photo }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_tp_member_photo|render) ? 'col-lg-8' : 'col-sm-12' }}">
+      {{ title_prefix }}
+      {% if not page %}
+        <h2{{ title_attributes.addClass('node__title') }}>{{ label }}</h2>
+      {% endif %}
+      {{ title_suffix }}
+      {{ content.field_tp_subtitle }}
+      {{ content.body }}
+      {% if content.field_tp_facebook_account|render or content.field_tp_twitter_account|render or content.field_tp_linkedin_account|render %}
+        <ul class="icons-list mt-3">
+          {% if content.field_tp_facebook_account|render %}
+            <li>
+              <a target="_blank" href="{{ node.field_tp_facebook_account.value }}">
+                <i class="fab fa-facebook"></i><span class="sr-only">facebook</span>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_tp_twitter_account|render %}
+            <li>
+              <a target="_blank" href="{{ node.field_tp_twitter_account.value }}">
+                <i class="fab fa-twitter"></i><span class="sr-only">twitter</span>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_tp_linkedin_account|render %}
+            <li>
+              <a target="_blank" href="{{ node.field_tp_linkedin_account.value }}">
+                <i class="fab fa-linkedin"></i><span class="sr-only">linkedin</span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+  {{ content|without('field_tp_member_photo','field_tp_subtitle','field_tp_facebook_account','field_tp_twitter_account','field_tp_linkedin_account','body') }}
+{% endblock %}

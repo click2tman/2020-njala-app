@@ -1,0 +1,20 @@
+uuid: 919aa492-2734-4353-b78c-de5a14238ab7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: xrng8ZeBT9NkuS0S_Ejqxhj7vDJq6cv3fv1_tZnFmMk
+id: njalaapp_local_actions
+theme: njalaapp
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,39 @@
+uuid: c731e58a-1f74-48e5-8260-4aa418d2c94c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f5f27246-6de8-413a-bc13-a6a56db993c2'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - njalaapp
+id: gettingstartedfornonauthenticatedusers
+theme: njalaapp
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:f5f27246-6de8-413a-bc13-a6a56db993c2'
+settings:
+  id: 'block_content:f5f27246-6de8-413a-bc13-a6a56db993c2'
+  label: 'Getting Started for non-authenticated Users'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/getting-started\r\n/node/97\r\n/home\r\n/node/111\r\n/admissions-requirements\r\n/node/6"
+    negate: false
+    context_mapping: {  }

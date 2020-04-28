@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's products carousel.
+ */
+.tp-carousel-products .tp-carousel-item {
+  margin: 0 15px 15px;
+}

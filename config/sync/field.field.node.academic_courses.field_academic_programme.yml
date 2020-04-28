@@ -1,0 +1,28 @@
+uuid: e03d5d8c-f115-4cb2-ac44-09e219246805
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academic_programme
+    - node.type.academic_courses
+    - node.type.academic_programs
+id: node.academic_courses.field_academic_programme
+field_name: field_academic_programme
+entity_type: node
+bundle: academic_courses
+label: 'Academic Program'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      academic_programs: academic_programs
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

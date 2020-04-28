@@ -1,0 +1,190 @@
+uuid: f940e295-e9f6-4da6-bc4a-70f46c81a61f
+langcode: en
+status: open
+dependencies:
+  module:
+    - webform_analysis
+third_party_settings:
+  webform_analysis:
+    chart_type: PieChart
+    components: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: user_satisfaction_survey
+title: 'User Satisfaction Survey'
+description: ''
+category: 'Njala University'
+elements: "survey:\n  '#type': webform_wizard_page\n  '#title': Survey\n  survey_details:\n    '#type': fieldset\n    '#title': 'Survey Details'\n    does_the_application_help_you_achieve_your_goals:\n      '#type': radios\n      '#title': 'Does the application help you achieve your goals'\n      '#options': yes_no\n    in_your_own_words_describe_how_you_feel_about_the_online_applica:\n      '#type': textarea\n      '#title': 'In your own words, describe how you feel about the online application process'\n    how_can_we_improve_your_experience_with_the_online_application:\n      '#type': textarea\n      '#title': 'How can we improve your experience with the online application'\n    what_s_working_for_you_and_why_:\n      '#type': textarea\n      '#title': 'What''s working for you and why?'\n    do_you_have_any_additional_comments_or_feedback_for_us_:\n      '#type': textarea\n      '#title': 'Do you have any additional comments or feedback for us?'\n    what_s_not_working_for_you_and_why_:\n      '#type': textarea\n      '#title': 'What''s not working for you and why?'\ncontact:\n  '#type': webform_wizard_page\n  '#title': Contact\n  your_contact_details:\n    '#type': fieldset\n    '#title': 'Your Contact Details'\n    full_name:\n      '#type': webform_name\n      '#title': 'Full Name'\n    phone_number:\n      '#type': tel\n      '#title': 'Phone Number'\n    email_address:\n      '#type': email\n      '#title': 'Email Address'"
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles:
+      - department_head
+      - dean
+      - secretariat
+      - administration
+      - administrator
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

@@ -1,0 +1,22 @@
+uuid: 575368d3-1384-433d-9b35-81ade1760581
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_if_block
+    - field.field.block_content.tp_if_block.body
+  module:
+    - text
+id: block_content.tp_if_block.default
+targetEntityType: block_content
+bundle: tp_if_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

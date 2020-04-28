@@ -1,0 +1,21 @@
+uuid: bbfedea4-1de7-47f1-92f0-c25347228090
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hod_status
+    - node.type.faculty_and_staff
+  module:
+    - options
+id: node.faculty_and_staff.field_hod_status
+field_name: field_hod_status
+entity_type: node
+bundle: faculty_and_staff
+label: 'HOD Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

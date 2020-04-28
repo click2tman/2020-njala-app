@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's collections carousel.
+ */
+.tp-carousel-collections .owl-item {
+  text-align: center;
+}
+.tp-carousel-collections .tp-carousel-item {
+  margin: 0 15px;
+}

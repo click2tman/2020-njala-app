@@ -1,0 +1,22 @@
+uuid: 5c6579cc-7fe8-4d8d-9321-d0ac5ca8b504
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_background_image_block
+    - field.field.block_content.tp_background_image_block.field_tp_background_image
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_color
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_layout_mode
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_opacity
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_positioning
+id: block_content.tp_background_image_block.default
+targetEntityType: block_content
+bundle: tp_background_image_block
+mode: default
+content: {  }
+hidden:
+  field_tp_background_image: true
+  field_tp_bg_image_color: true
+  field_tp_bg_image_layout_mode: true
+  field_tp_bg_image_opacity: true
+  field_tp_bg_image_positioning: true

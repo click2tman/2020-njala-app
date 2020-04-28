@@ -1,0 +1,12 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: false
+  path: 'public://FCC9C2F3-FD8C-47A6-BC93-65BAFE64A6A9.jpeg'
+favicon:
+  use_default: false
+  path: 'public://453AEE7F-ED59-4D94-A9DB-BA1911690C83.jpeg'
+  mimetype: image/jpeg

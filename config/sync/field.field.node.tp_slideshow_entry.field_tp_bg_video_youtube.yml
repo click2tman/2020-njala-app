@@ -1,0 +1,19 @@
+uuid: a0f9f19c-b5c6-4498-ba2f-d7161ea9d3eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tp_bg_video_youtube
+    - node.type.tp_slideshow_entry
+id: node.tp_slideshow_entry.field_tp_bg_video_youtube
+field_name: field_tp_bg_video_youtube
+entity_type: node
+bundle: tp_slideshow_entry
+label: 'Background Video - Youtube ID'
+description: 'Provide the ID of the Video you''d like to use from Youtube (e.g 3wbvpOIIBQA)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

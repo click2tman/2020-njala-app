@@ -1,0 +1,8 @@
+uuid: 4ee5016c-2838-44bd-98c3-a0865e1f7923
+langcode: en
+status: true
+dependencies: {  }
+id: quick-menu
+label: 'Quick Menu'
+description: ''
+locked: false

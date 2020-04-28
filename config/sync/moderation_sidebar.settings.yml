@@ -1,0 +1,8 @@
+workflows:
+  editorial_workflow:
+    disabled_transitions:
+      create_new_draft: create_new_draft
+      publish: publish
+      archive: archive
+      archived_draft: archived_draft
+      archived_published: archived_published

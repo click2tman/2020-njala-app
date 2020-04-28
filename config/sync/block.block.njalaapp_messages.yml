@@ -1,0 +1,22 @@
+uuid: 07f58ecf-762d-4314-b433-5de15b0ce228
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: lK14JvhwfU-PQOwYgfI9_x5hVM1-jO0hLV1OcQsYIkw
+id: njalaapp_messages
+theme: njalaapp
+region: system_messages
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

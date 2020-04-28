@@ -1,0 +1,98 @@
+/**
+ * @file
+ * Visual styles for the site branding block in NjalaAPP.
+ */
+.site-branding {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-12 .site-branding {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .site-branding {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+.logo:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.site-name a {
+  font-size: 32px;
+  font-weight: 700;
+  line-height:1.1;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+.region--light-typography .site-name a {
+  color: #ffffff;
+}
+.site-name a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.site-slogan {
+  font-size: 14px;
+  line-height: 1.30;
+  padding: 0;
+  font-weight: 400;
+}
+.headings-wide-spacing-enabled .site-slogan {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+@media (max-width:767px) {
+  .site-name {
+    margin: 5px 0 0 0;
+  }
+  .site-slogan {
+    display: block;
+    visibility: visible;
+    padding: 5px 0 0 0;
+  }
+  .header-container .site-branding.block {
+    margin-bottom: 20px;
+  }
+  .header-container .col-12 .site-branding.block {
+    margin-bottom: 0px;
+  }
+}
+
+/* Site Branding @footer*/
+.footer__section .logo-and-site-name-wrapper {
+  margin: 0 0 15px;
+}
+.footer__section .site-name a {
+  font-size: 32px;
+  margin-bottom: 5px;
+  display: block;
+}
+.footer__section .site-slogan {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* Site Branding @subfooter*/
+.region--dark-typography .subfooter__section .site-slogan {
+  color: #a5a5a5;
+}

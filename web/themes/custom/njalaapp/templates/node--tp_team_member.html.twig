@@ -1,0 +1,78 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * NjalaAPP's theme implementation to display a Team member node.
+ */
+#}
+
+{% block content %}
+  {{ attach_library('njalaapp/node-team-member') }}
+  <div class="row content">
+    {% if content.field_tp_member_photo|render %}
+      {% if view_mode == "full" %}
+        {{ attach_library('njalaapp/magnific-popup-field-member-photo-init') }}
+      {% endif %}
+      <div class="col-lg-6">
+        <div class="photo-container">
+          {{ content.field_tp_member_photo }}
+          {% if content.field_tp_facebook_account|render or content.field_tp_twitter_account|render or content.field_tp_linkedin_account|render %}
+            <ul class="icons-list icons-list--bordered">
+              {% if content.field_tp_facebook_account|render %}
+                <li>
+                  <a target="_blank" href="{{ node.field_tp_facebook_account.value }}">
+                    <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
+                  </a>
+                </li>
+              {% endif %}
+              {% if content.field_tp_twitter_account|render %}
+                <li>
+                  <a target="_blank" href="{{ node.field_tp_twitter_account.value }}">
+                    <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+                  </a>
+                </li>
+              {% endif %}
+              {% if content.field_tp_linkedin_account|render %}
+                <li>
+                  <a target="_blank" href="{{ node.field_tp_linkedin_account.value }}">
+                    <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_tp_member_photo|render) ? 'col-lg-6' : 'col-sm-12' }}">
+      {{ content.field_tp_subtitle }}
+      {{ content.body }}
+      {% if (not content.field_tp_member_photo|render) and (content.field_tp_facebook_account|render or content.field_tp_twitter_account|render or content.field_tp_linkedin_account|render) %}
+        <ul class="icons-list icons-list--bordered">
+          {% if content.field_tp_facebook_account|render %}
+            <li>
+              <a target="_blank" href="{{ node.field_tp_facebook_account.value }}">
+                <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_tp_twitter_account|render %}
+            <li>
+              <a target="_blank" href="{{ node.field_tp_twitter_account.value }}">
+                <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_tp_linkedin_account|render %}
+            <li>
+              <a target="_blank" href="{{ node.field_tp_linkedin_account.value }}">
+                <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+  {{ content|without('field_tp_member_photo','field_tp_subtitle','field_tp_facebook_account','field_tp_twitter_account','field_tp_linkedin_account','body') }}
+{% endblock %}

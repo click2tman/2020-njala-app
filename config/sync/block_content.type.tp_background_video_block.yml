@@ -1,0 +1,8 @@
+uuid: 9ea1a462-6776-4f8c-8bb9-3c5649c5f8da
+langcode: en
+status: true
+dependencies: {  }
+id: tp_background_video_block
+label: 'Background Video Block'
+revision: 1
+description: 'Use this custom block type to create blocks with background videos'

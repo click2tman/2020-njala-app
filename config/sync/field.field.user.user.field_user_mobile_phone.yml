@@ -1,0 +1,27 @@
+uuid: 497f3cd9-1c00-4899-af2d-e3c500ad6749
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_mobile_phone
+  module:
+    - telephone
+    - telephone_validation
+    - user
+third_party_settings:
+  telephone_validation:
+    format: 0
+    country:
+      SL: SL
+id: user.user.field_user_mobile_phone
+field_name: field_user_mobile_phone
+entity_type: user
+bundle: user
+label: 'Mobile Phone'
+description: 'Please use the a working mobile phone number. This information will be used in your student application form automatically.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

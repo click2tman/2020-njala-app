@@ -1,0 +1,16 @@
+uuid: f6526ffd-1efc-4dcc-a2d0-d9676ca82517
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Current Student'
+id: current_student
+label: 'Current Student'
+weight: -7
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'view own unpublished media'

@@ -1,0 +1,21 @@
+uuid: f6c92339-9508-476a-8c58-e4c55a2ec3cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.faculty_and_staff
+  module:
+    - metatag
+id: node.faculty_and_staff.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: faculty_and_staff
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

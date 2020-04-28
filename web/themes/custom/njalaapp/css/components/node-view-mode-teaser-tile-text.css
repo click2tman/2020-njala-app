@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node in teaser tile view.
+ */
+.node--view-mode-tp-teaser-tile-text {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.node--view-mode-tp-teaser-tile-text h4 {
+  margin-bottom: 15px;
+}
+.node--view-mode-tp-teaser-tile-text .node__header {
+  padding-bottom: 0;
+}
+
+/* article node */
+.node--view-mode-tp-teaser-tile-text .node__meta {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.region--dark-typography .node--view-mode-tp-teaser-tile-text .node__meta {
+  color: #707070;
+}
+.node--view-mode-tp-teaser-tile-text .profile {
+  display: inline-block;
+}
+.node--view-mode-tp-teaser-tile-text .field--name-user-picture img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+.node--view-mode-tp-teaser-tile-text .node__content {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .node--sticky a.button {
+    display: none;
+  }
+}
+.view-tp-posts-grid .js-pager__items {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.node--view-mode-tp-teaser-tile-text .node__meta {
+  font-size: 14px;
+}

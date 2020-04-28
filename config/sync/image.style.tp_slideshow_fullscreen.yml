@@ -1,0 +1,7 @@
+uuid: f60b31a4-98be-42fe-9cab-d2c39b6bf1f2
+langcode: en
+status: true
+dependencies: {  }
+name: tp_slideshow_fullscreen
+label: 'Slideshow Full Screen'
+effects: {  }

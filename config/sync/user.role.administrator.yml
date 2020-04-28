@@ -1,0 +1,16 @@
+uuid: 7e57daeb-0d3e-4f52-a76b-a50dc7c80726
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Super Administrator (ICTD)'
+_core:
+  default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
+id: administrator
+label: 'Super Administrator (ICTD)'
+weight: 0
+is_admin: true
+permissions: {  }

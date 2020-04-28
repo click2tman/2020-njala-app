@@ -1,0 +1,23 @@
+uuid: 38e47f5d-9f03-4625-9fcb-4ec4926392da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programme_level
+    - node.type.academic_programs
+  module:
+    - options
+id: node.academic_programs.field_programme_level
+field_name: field_programme_level
+entity_type: node
+bundle: academic_programs
+label: 'Programme Level'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Bachelors
+default_value_callback: ''
+settings: {  }
+field_type: list_string

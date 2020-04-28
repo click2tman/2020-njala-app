@@ -1,0 +1,27 @@
+uuid: a0028aa1-a7b8-4a65-b10b-ed8baeec8750
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: RNG5kjX2l67_gSH_r_AxEV9g_gXr5oJA3LiJu4u5heY
+id: njalaapp_page_title
+theme: njalaapp
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/97\r\n/getting-started\r\n/403\r\n/node/3\r\n"
+    negate: true
+    context_mapping: {  }

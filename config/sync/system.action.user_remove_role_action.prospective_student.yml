@@ -1,0 +1,14 @@
+uuid: c7e0a814-521e-40ce-b9ba-8c6aea1c0688
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.prospective_student
+  module:
+    - user
+id: user_remove_role_action.prospective_student
+label: 'Remove the Prospective Student role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: prospective_student

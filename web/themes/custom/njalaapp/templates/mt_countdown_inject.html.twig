@@ -1,0 +1,77 @@
+{% if inject_in_the_body %}
+
+  <style>
+
+    .tp-count-down {
+      background-color: {{ background }};
+    }
+    .tp-count-down__title {
+      color: {{ title_color }};
+    }
+    .tp-count-down__notes {
+      color: {{ notes_color }};
+    }
+    .tp-count-down__message {
+      color: {{ message_color }};
+    }
+    .tp-count-down__daysto {
+      color: {{ notes_color }};
+    }
+    .tp-count-down__button {
+      background-color: {{ button_background }};
+      color: {{ button_color }};
+    }
+
+  </style>
+
+  <div class="{{ predefined_palettes }} tp-count-down-inject tp-count-down alert alert-dismissible fade show" role="alert">
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-8 col-xs-12">
+
+              <div class="tp-count-down__title">
+                {% if title %}
+                  {{ title|t }}
+                {% endif %}
+              </div>
+
+              <div class="tp-count-down__message">
+                {% if prompt_message %}
+                  {{ prompt_message|t }}
+                {% endif %}
+              </div>
+
+            </div>
+
+            <div class="col-sm-4 col-xs-12 text-sm-left text-center">
+              {% if target_url and dismiss_text %}
+                <a href="{{ target_url }}" class="tp-count-down__button">{{ dismiss_text|t }}</a>
+              {% endif %}
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tp-count-down__daysto">
+            <span class="tp-count-down__notes">
+              {% if days_to %}
+                {{ days_to|t }}</span>
+              {% endif %}
+            <div class="tp-count-down-slot"></div>
+          </div>
+        </div>
+
+      </div>  <!-- / .row -->
+    </div> <!-- /.container -->
+  </div>
+
+{% endif %}

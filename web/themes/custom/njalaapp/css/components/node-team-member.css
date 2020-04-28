@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's team member content type.
+ */
+.page-node-type-tp-team-member h1.page-title {
+  margin-bottom: 10px;
+}
+.photo-container {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+.photo-container .icons-list.icons-list--bordered {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 10px 0 5px;
+  text-align: center;
+  z-index: 10;
+}
+.photo-container ul.icons-list.icons-list--bordered li a {
+  border-color: #363636;
+  color: #363636;
+}
+.photo-container ul.icons-list.icons-list--bordered li a:hover {
+  border-color: #777777;
+  color: #777777;
+}
+
+/* Adjust blocks spacing in user profile page */
+.main-content .block-system-main-block + .block-views-blockmt-team-member-profile-block-1 {
+  margin-top: -40px;
+}

@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * NjalaAPP's theme implementation to display a Post node in teaser tile view mode.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('njalaapp/node-view-mode-teaser-tile') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <div class="image-and-tag-container">
+    {% if content.field_image|render %}
+      {{ content.field_image }}
+    {% endif %}
+    <div class="image-and-tag-container__text">
+      <h4{{ title_attributes.addClass("mt-0") }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h4>
+    </div>
+  </div>
+  {{ title_suffix }}
+
+  {% if content|without('field_image')|render %}
+    <div {{ content_attributes.addClass('node__content') }}>
+      {{ content|without('field_image') }}
+    </div>
+  {% endif %}
+
+  {% if display_submitted %}
+    <div class="node__meta">
+      {{ author_picture }}
+      <span{{ author_attributes.addClass('node__submitted') }}>
+      {% set createdDate = node.getCreatedTime|date('j M Y') %}
+        {% trans %}{{ author_name }} / {{ createdDate }} {% endtrans %}
+        {{ metadata }}
+      </span>
+    </div>
+  {% endif %}
+
+</article>

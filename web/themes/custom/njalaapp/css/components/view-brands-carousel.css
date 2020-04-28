@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's products carousel.
+ */
+.view-tp-carousel--brands {
+  padding: 30px 0 10px;
+}
+.tp-carousel-brands {
+  padding: 50px 0;
+}
+
+.tp-carousel-brands .owl-item {
+  text-align: center;
+}
+.tp-carousel-brands .tp-carousel-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 35px;
+  max-width: 100%;
+}
+@media (max-width: 575px) {
+  .tp-carousel-brands .tp-carousel-item {
+    padding: 0 15px;
+  }
+}
+
+/*brans carousel's overlay*/
+.tp-carousel-brands .overlay-target-link a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  font-size: 0;
+}
+
+/*navigation*/
+.tp-carousel-brands .owl-nav {
+  top: -25px;
+  right: 0;
+  left: 0;
+}
+.tp-carousel-brands .owl-nav .owl-prev {
+  left: 35px;
+}
+.tp-carousel-brands .owl-nav .owl-next {
+  right: 35px;
+}

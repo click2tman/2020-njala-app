@@ -1,0 +1,23 @@
+uuid: fad1be3c-2655-44d4-92d6-d0527423eb16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programme_duration
+    - node.type.academic_courses
+id: node.academic_courses.field_programme_duration
+field_name: field_programme_duration
+entity_type: node
+bundle: academic_courses
+label: 'Course Duration'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

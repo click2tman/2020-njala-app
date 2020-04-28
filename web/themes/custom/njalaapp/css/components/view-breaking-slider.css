@@ -1,0 +1,69 @@
+/**
+ * @file
+ * Visual styles for Pressplus's breaking slider.
+ */
+.view-tp-breaking-slider {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.view-tp-breaking-slider > .view-content {
+  -ms-flex-order: 2;
+  order: 2;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.view-tp-breaking-slider > .more-link {
+  -ms-flex-order: 1;
+  order: 1;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  padding-right: 0;
+  padding-left: 15px;
+  margin-top: 0;
+}
+.view-tp-breaking-slider.view > .more-link a {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #333333;
+  color: #ffffff;
+  border-bottom: none;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  padding: 3px 10px 3px 30px;
+  position: relative;
+}
+.view-tp-breaking-slider.view > .more-link a:hover,
+.view-tp-breaking-slider.view > .more-link a:focus {
+  color: #ffffff;
+}
+.view-tp-breaking-slider.view > .more-link a:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+.view-tp-breaking-slider .views-field-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.region--dark-typography .view-tp-breaking-slider .views-field-title a {
+  color: #333333;
+}

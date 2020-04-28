@@ -1,0 +1,28 @@
+uuid: 962f50a7-4814-4e8a-9c77-2846c88d3729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programme_attachments
+    - media.type.file
+    - node.type.academic_programs
+id: node.academic_programs.field_programme_attachments
+field_name: field_programme_attachments
+entity_type: node
+bundle: academic_programs
+label: 'Programme Attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

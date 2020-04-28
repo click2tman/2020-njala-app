@@ -1,0 +1,27 @@
+uuid: 1937c423-c77e-4704-952d-87dd8bb6562b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - njalaapp
+third_party_settings:
+  block_class:
+    classes: menu--centered
+id: sitebranding
+theme: njalaapp
+region: header_top_first
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

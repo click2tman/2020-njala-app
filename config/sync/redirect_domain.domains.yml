@@ -1,0 +1,7 @@
+domain_redirects:
+  'admissions:njala:edu:sl':
+    -
+      sub_path: /
+      destination: app.njala.edu.sl
+_core:
+  default_config_hash: CgXLPQkHCGerCdDtMO8wK9Er4j6iy1iMOyalk8iRgrE

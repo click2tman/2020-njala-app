@@ -1,0 +1,21 @@
+uuid: fda9d6a1-e8e1-4be3-bbbe-34d754dad597
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.academic_department
+  module:
+    - metatag
+id: node.academic_department.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: academic_department
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

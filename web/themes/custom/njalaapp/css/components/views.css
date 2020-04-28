@@ -1,0 +1,137 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's views.
+ */
+.views-field-title a {
+  display: inline;
+  text-decoration: none;
+}
+
+/*more links*/
+.view > .more-link a {
+  margin: 0 0 10px 0px;
+  display: inline-block;
+  background-color: transparent;
+  padding:0;
+  text-align: left;
+  border: none;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+.region--dark-typography .view > .more-link a {
+  color: #000000;
+}
+.region--dark-background .view > .more-link a,
+.region--colored-background .view > .more-link a {
+  border-color: #000000;
+}
+.region--dark-typography .view > .more-link a:hover {
+  color: #000000;
+  border-color: transparent;
+}
+.region--light-typography .view > .more-link a {
+  border-color: #ffffff;
+}
+.region--light-typography .view > .more-link a:hover {
+  border-color: transparent;
+}
+.headings-wide-spacing-enabled .view > .more-link a {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.col-12 .view > .more-link {
+  text-align: center;
+}
+.col-12 .view > .more-link a {
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  min-width: 150px;
+  color: #000000;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 0;
+  text-align: center;
+  background-color: transparent;
+}
+.col-12 .view > .more-link a:hover {
+  color: #000000;
+}
+.col-12 .view > .more-link a:after {
+  content: "";
+}
+.region--dark-typography .col-12 .view > .more-link a {
+  border-color: transparent;
+}
+.region--colored-background .col-12 .view > .more-link a,
+.region--dark-background .col-12 .view > .more-link a,
+.region--colored-background .col-12 .view > .more-link a:hover,
+.region--dark-background .col-12 .view > .more-link a:hover,
+.region--colored-background .col-12 .view > .more-link a:focus,
+.region--dark-background .col-12 .view > .more-link a:focus {
+  border-color: #000000;
+}
+.region--light-typography .col-12 .view > .more-link a {
+  color: #000000;
+  border-color: #000000;
+}
+.region--light-typography .col-12 .view > .more-link a:hover {
+  color: #000000;
+}
+
+/*more links @sidebars and footer regions*/
+.footer__section .view > .more-link a {
+  margin: 10px 0 0;
+  text-transform: none;
+}
+
+/*clear grid floats*/
+.view.row .view-content:before,
+.view.row .view-content:after {
+  display: table;
+  content: " ";
+}
+.view.row .view-content:after {
+  clear: both;
+}
+
+/*title of latest*/
+#block-views-block-tp-latest-posts-block-1 h2.title {
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 0;
+  background-color: #000000;
+  margin-bottom: 30px;
+  position: relative;
+}
+#block-views-block-tp-latest-posts-block-1 h2.title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -7.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #000000 transparent transparent transparent;
+}
+.region--light-typography #block-views-block-tp-latest-posts-block-1 h2.title {
+  background-color: #ffffff;
+  color: #000000;
+}
+.region--light-typography #block-views-block-tp-latest-posts-block-1 h2.title:after {
+  border-color: #ffffff transparent transparent transparent;
+}

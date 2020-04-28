@@ -1,0 +1,18 @@
+uuid: a3bdb75c-3965-474f-a27c-37d654ac2e00
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Academic Courses'
+type: academic_courses
+description: 'Academic Courses'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

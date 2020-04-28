@@ -1,0 +1,14 @@
+uuid: dfb9c2d0-7b1a-497c-bbc3-9a4d0bc36248
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8mYO8ewsZX3LVfNga69jXa0RNO0LNN8-EGkXLhSAMBU
+id: state_codes
+label: 'State codes'
+category: Geographic
+likert: false
+options: "BO: 'Bo - South - Sierra Leone'\nBE: 'Bonthe - South - Sierra Leone'\nMA: 'Moyamba - South - Sierra Leone'\nPN: 'Pujehun - South - Sierra Leone'\nKN: 'Kailahun - East - Sierra Leone'\nKA: 'Kenema - East - Sierra Leone'\nKO: 'Kono - East - Sierra Leone'\nTI: 'Tonkolili - North - Sierra Leone'\nBI: 'Bombali - North - Sierra Leone'\nFA: 'Falaba - North - Sierra Leone'\nKU: 'Koinadugu - North - Sierra Leone'\nKE: 'Karene - North West - Sierra Leone'\nPO: 'Port Loko - North West - Sierra Leone'\nKB: 'Kambia - North West - Sierra Leone'\nWAR: 'Western Area Rural - West - Sierra Leone'\nWAU: 'Western Area Urban - West - Sierra Leone'\n"

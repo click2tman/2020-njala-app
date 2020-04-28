@@ -1,0 +1,22 @@
+uuid: 6ec3b66c-3f5b-4b16-8f64-78d6c0fff2cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: lgL3uKCuG9FUjUEmPZVwUfzACiZSW-CkiXXFOs0t46I
+id: njalaapp_content
+theme: njalaapp
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

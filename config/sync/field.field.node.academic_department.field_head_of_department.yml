@@ -1,0 +1,28 @@
+uuid: 4fe04f95-aafe-4ada-abd8-66e5a92bcd70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_head_of_department
+    - node.type.academic_department
+    - node.type.faculty_and_staff
+id: node.academic_department.field_head_of_department
+field_name: field_head_of_department
+entity_type: node
+bundle: academic_department
+label: 'Head of Department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      faculty_and_staff: faculty_and_staff
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

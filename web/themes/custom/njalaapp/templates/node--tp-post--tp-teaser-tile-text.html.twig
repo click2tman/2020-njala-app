@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * NjalaAPP's theme implementation to display a Post node in teaser tile text view mode.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('njalaapp/node-view-mode-teaser-tile-text') }}
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h4{{ title_attributes.addClass("mt-0") }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h4>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if content|render %}
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content }}
+  </div>
+  {% endif %}
+
+  {% if display_submitted %}
+    <div class="node__meta">
+      {{ author_picture }}
+      <span{{ author_attributes.addClass('node__submitted') }}>
+      {% set createdDate = node.getCreatedTime|date('j M Y') %}
+        {% trans %}{{ author_name }} / {{ createdDate }} {% endtrans %}
+        {{ metadata }}
+      </span>
+    </div>
+  {% endif %}
+
+</article>

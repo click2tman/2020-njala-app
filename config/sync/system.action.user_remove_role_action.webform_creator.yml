@@ -1,0 +1,14 @@
+uuid: d436a975-902c-4a95-9ddb-8c1c4c7ece93
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webform_creator
+  module:
+    - user
+id: user_remove_role_action.webform_creator
+label: 'Remove the Webform creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webform_creator

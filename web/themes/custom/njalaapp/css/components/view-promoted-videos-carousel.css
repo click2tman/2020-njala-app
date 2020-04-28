@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's promoted videos carousel.
+ */
+.view-promoted-videos-carousel .tp-carousel-item {
+  margin: 0 15px 40px;
+  text-align: center;
+}
+.view-promoted-videos-carousel .owl-nav {
+  top: auto;
+  bottom: 40px;
+}
+.view-promoted-videos-carousel .owl-nav div:after {
+  font-size: 45px;
+  line-height: 1;
+}
+.view-promoted-videos-carousel .more-link {
+  margin-top: 0;
+}

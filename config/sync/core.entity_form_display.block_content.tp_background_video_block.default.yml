@@ -1,0 +1,71 @@
+uuid: 3e4d0ad7-4ee4-41df-ae11-85a66a6b74bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_background_video_block
+    - field.field.block_content.tp_background_video_block.field_tp_bv_layout_mode
+    - field.field.block_content.tp_background_video_block.field_tp_bv_overlay_color
+    - field.field.block_content.tp_background_video_block.field_tp_bv_overlay_opacity
+    - field.field.block_content.tp_background_video_block.field_tp_bv_poster
+    - field.field.block_content.tp_background_video_block.field_tp_bv_video_mp4
+    - field.field.block_content.tp_background_video_block.field_tp_bv_video_webm
+    - image.style.thumbnail
+  module:
+    - file
+    - image
+id: block_content.tp_background_video_block.default
+targetEntityType: block_content
+bundle: tp_background_video_block
+mode: default
+content:
+  field_tp_bv_layout_mode:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_bv_overlay_color:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_bv_overlay_opacity:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tp_bv_poster:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_tp_bv_video_mp4:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_tp_bv_video_webm:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

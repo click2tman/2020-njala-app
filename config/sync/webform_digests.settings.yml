@@ -1,0 +1,6 @@
+cron:
+  frequency: day
+  hour: 9
+  enabled: true
+_core:
+  default_config_hash: zFbfHkaZHBnU8Fv_tPkgGMs7OmfyB6JSlFAy9hPVOrI

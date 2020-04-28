@@ -1,0 +1,20 @@
+uuid: 42a3b7d3-209d-4746-9c35-38332d953235
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.tp_slideshow_entry
+  module:
+    - user
+id: node.tp_slideshow_entry.teaser
+targetEntityType: node
+bundle: tp_slideshow_entry
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

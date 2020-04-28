@@ -1,0 +1,221 @@
+affix_side: 1
+animations_state: 0
+banner_background_color: 'region--dark-typography region--white-background'
+banner_blocks_paddings: 1
+banner_id: banner
+banner_layout_container: container-fluid
+banner_region_paddings: 1
+bootstrap_remote_type: cdn
+breadcrumb_separator: fa-angle-right
+breaking_effect: fade
+breaking_effect_time: '5'
+color_scheme: gray
+content_bottom_animation_effect: fadeIn
+content_bottom_background_color: 'region--light-typography region--black-background'
+content_bottom_blocks_paddings: 0
+content_bottom_id: content-bottom
+content_bottom_layout_container: container-fluid
+content_bottom_region_paddings: 0
+content_bottom_separator: region--no-separator
+content_top_animation_effect: fadeIn
+content_top_background_color: 'region--dark-typography region--white-background'
+content_top_blocks_paddings: 0
+content_top_highlighted_animation_effect: fadeIn
+content_top_highlighted_background_color: 'region--light-typography region--black-background'
+content_top_highlighted_blocks_paddings: 1
+content_top_highlighted_id: content-top-highlighted
+content_top_highlighted_layout_container: container
+content_top_highlighted_region_paddings: 1
+content_top_highlighted_separator: region--no-separator
+content_top_id: content-top
+content_top_layout_container: container
+content_top_region_paddings: 0
+featured_animation_effect: no-animation
+featured_background_color: 'region--dark-typography region--white-background'
+featured_blocks_paddings: 0
+featured_bottom_animation_effect: fadeIn
+featured_bottom_background_color: 'region--dark-typography region--gray-background'
+featured_bottom_blocks_paddings: 0
+featured_bottom_id: featured-bottom
+featured_bottom_layout_container: container
+featured_bottom_region_paddings: 0
+featured_bottom_separator: region--no-separator
+featured_id: featured
+featured_layout_container: container-fluid
+featured_region_paddings: 0
+featured_separator: region--no-separator
+featured_top_animation_effect: fadeIn
+featured_top_background_color: 'region--dark-typography region--white-background'
+featured_top_blocks_paddings: 0
+featured_top_id: featured-top
+featured_top_layout_container: container
+featured_top_region_paddings: 0
+featured_top_separator: region--no-separator
+fixed_header: 1
+font_resize: 1
+footer_animation_effect: fadeIn
+footer_background_color: 'region--light-typography region--black-background'
+footer_blocks_paddings: 0
+footer_bottom_background_color: 'region--light-typography region--black-background'
+footer_bottom_blocks_paddings: 0
+footer_bottom_id: footer-bottom
+footer_bottom_layout_container: container
+footer_bottom_region_paddings: 0
+footer_bottom_separator: region--no-separator
+footer_id: footer
+footer_layout_container: container
+footer_region_paddings: 0
+footer_separator: region--no-separator
+footer_top_animation_effect: fadeIn
+footer_top_background_color: 'region--dark-typography region--white-background'
+footer_top_blocks_paddings: 0
+footer_top_id: footer-top
+footer_top_layout_container: container
+footer_top_region_paddings: 0
+footer_top_separator: region--no-separator
+google_maps_key: AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI
+header_background_color: 'region--dark-typography region--white-background'
+header_blocks_paddings: 0
+header_layout_container: container
+header_region_paddings: 0
+header_top_animation_effect: no-animation
+header_top_background_color: 'region--dark-typography region--white-background'
+header_top_blocks_paddings: 0
+header_top_highlighted_animation_effect: no-animation
+header_top_highlighted_background_color: 'region--dark-typography region--white-background'
+header_top_highlighted_blocks_paddings: 0
+header_top_highlighted_layout_container: container
+header_top_highlighted_region_paddings: 0
+header_top_layout_container: container
+header_top_region_paddings: 0
+headings_font_family: hff-48
+headings_wide_spacing: 0
+highlighted_animation_effect: fadeIn
+highlighted_background_color: 'region--dark-typography region--colored-background'
+highlighted_blocks_paddings: 0
+highlighted_id: highlighted
+highlighted_layout_container: container
+highlighted_region_paddings: 0
+highlighted_separator: region--no-separator
+highlighted_top_animation_effect: fadeIn
+highlighted_top_background_color: 'region--dark-typography region--gray-background'
+highlighted_top_blocks_paddings: 0
+highlighted_top_id: highlighted-top
+highlighted_top_layout_container: container
+highlighted_top_region_paddings: 0
+highlighted_top_separator: region--no-separator
+in_page_navigation_offset: '74'
+in_page_slider_effect: slide
+inverted_header_state: 0
+isotope_filters_text: All
+isotope_layout_mode: masonry
+layout_mode: boxed
+main_content_animation_effect: fadeIn
+main_content_blocks_paddings: 0
+main_content_id: main-content
+main_content_region_paddings: 0
+main_content_separator: region--no-separator
+mobile_menu_widget_display: 0
+mobile_menu_widget_sticky: 0
+owl_articles_autoplay: 1
+owl_articles_effect_time: '5'
+owl_brands_autoplay: 1
+owl_brands_effect_time: '5'
+owl_collections_autoplay: 0
+owl_collections_effect_time: '5'
+owl_products_autoplay: 1
+owl_products_effect_time: '5'
+owl_promoted_posts_autoplay: 0
+owl_promoted_posts_effect_time: '5'
+owl_promoted_videos_autoplay: 0
+owl_promoted_videos_effect_time: '5'
+owl_related_nodes_autoplay: 0
+owl_related_nodes_effect_time: '5'
+owl_team_members_autoplay: 1
+owl_team_members_effect_time: '100'
+owl_testimonials_autoplay: 1
+owl_testimonials_effect_time: '5'
+page_container_border: 1
+paragraph_font_family: pff-49
+post_progress: 1
+print_button: 1
+reading_time: 1
+rs_slideshow_background_opacity: '50'
+rs_slideshow_boxedwidth_bullets_position: right
+rs_slideshow_boxedwidth_effect: random
+rs_slideshow_boxedwidth_effect_time: '10'
+rs_slideshow_boxedwidth_initial_height: '650'
+rs_slideshow_boxedwidth_navigation_style: titles_carousel
+rs_slideshow_boxedwidth_touch_swipe: 1
+rs_slideshow_caption_opacity: '0'
+rs_slideshow_carousel_bullets_position: center
+rs_slideshow_carousel_initial_height: '350'
+rs_slideshow_carousel_touch_swipe: 1
+rs_slideshow_fullscreen_bullets_position: right
+rs_slideshow_fullscreen_effect: random
+rs_slideshow_fullscreen_effect_time: '10'
+rs_slideshow_fullscreen_navigation_style: bullets
+rs_slideshow_fullscreen_touch_swipe: 1
+rs_slideshow_fullwidth_bullets_position: right
+rs_slideshow_fullwidth_effect: random
+rs_slideshow_fullwidth_effect_time: '10'
+rs_slideshow_fullwidth_initial_height: '650'
+rs_slideshow_fullwidth_navigation_style: bullets
+rs_slideshow_fullwidth_touch_swipe: 1
+rs_slideshow_internal_banner_bullets_position: left
+rs_slideshow_internal_carousel_bullets_position: center
+rs_slideshow_internal_carousel_initial_height: '540'
+rs_slideshow_internal_carousel_touch_swipe: 1
+rs_slideshow_internal_effect: fade
+rs_slideshow_internal_effect_time: '10'
+rs_slideshow_internal_initial_height: '540'
+rs_slideshow_internal_navigation_style: bullets
+rs_slideshow_internal_touch_swipe: 1
+scroll_to_top_display: 0
+scroll_to_top_icon: fa-angle-double-up
+share_links: 1
+sidebar_first_animation_effect: fadeIn
+sidebar_first_blocks_paddings: 0
+sidebar_first_region_paddings: 0
+sidebar_second_animation_effect: fadeIn
+sidebar_second_blocks_paddings: 0
+sidebar_second_region_paddings: 0
+sitename_font_family: sff-49
+slideout_background_color: 'region--light-typography region--black-background'
+slideout_blocks_paddings: 0
+slideout_region_paddings: 0
+slideout_side: right
+slideout_touch_swipe: 0
+slogan_font_family: slff-48
+sub_featured_animation_effect: fadeIn
+sub_featured_background_color: 'region--dark-typography region--white-background'
+sub_featured_blocks_paddings: 0
+sub_featured_id: sub-featured
+sub_featured_layout_container: container
+sub_featured_region_paddings: 0
+sub_featured_separator: region--no-separator
+subfooter_background_color: 'region--light-typography region--black-background'
+subfooter_blocks_paddings: 0
+subfooter_bottom_blocks_paddings: false
+subfooter_bottom_region_paddings: false
+subfooter_id: subfooter
+subfooter_layout_container: container
+subfooter_region_paddings: 0
+subfooter_separator: region--separator-border-top
+total_node_views: 1
+transparent_header_opacity: '0'
+transparent_header_state: 0
+_core:
+  default_config_hash: bJxGFH7S4erXz31eU0OH24G7bWTV9l8_cEqmMIDbd-k
+features:
+  node_user_picture: false
+  comment_user_picture: false
+  comment_user_verification: false
+  favicon: false
+logo:
+  use_default: false
+  path: 'public://FCC9C2F3-FD8C-47A6-BC93-65BAFE64A6A9.jpeg'
+favicon:
+  use_default: true
+rs_slideshow_internal_bullets_position: left
+font_title: ''

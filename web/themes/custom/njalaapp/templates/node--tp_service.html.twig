@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * NjalaAPPs's theme implementation to display a Service node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('njalaapp/node-service') }}
+  {{ content }}
+{% endblock %}

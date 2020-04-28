@@ -1,0 +1,22 @@
+uuid: bc6f689a-5b79-4496-88bf-b3d80c743355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.faculty_and_staff
+  module:
+    - text
+id: node.faculty_and_staff.body
+field_name: body
+entity_type: node
+bundle: faculty_and_staff
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

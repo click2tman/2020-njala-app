@@ -1,0 +1,30 @@
+uuid: bd717c98-ec4c-4a7e-bb62-59aabfde3c0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Head of Department (HOD)'
+id: department_head
+label: 'Head of Department (HOD)'
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access profile overview'
+  - 'access site in maintenance mode'
+  - 'access user profiles'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'download any webform submission managed files'
+  - 'edit own webform submission'
+  - 'view all revisions'
+  - 'view any profile'
+  - 'view any webform submission'
+  - 'view own unpublished media'
+  - 'view the administration theme'

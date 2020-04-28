@@ -1,0 +1,31 @@
+uuid: 8123b078-3a49-4aad-9553-afabc088b66b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1a31f64a-6bfb-477c-a45d-efa3a84da0d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - njalaapp
+id: deadlineclosed
+theme: njalaapp
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1a31f64a-6bfb-477c-a45d-efa3a84da0d6'
+settings:
+  id: 'block_content:1a31f64a-6bfb-477c-a45d-efa3a84da0d6'
+  label: 'deadline closed'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/getting-started"
+    negate: false
+    context_mapping: {  }

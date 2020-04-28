@@ -1,0 +1,33 @@
+uuid: 8b84485c-27e3-4dbd-8091-9a153742568f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_faculty_type
+field_name: field_faculty_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Administration
+      label: Administration
+    -
+      value: Dean
+      label: Dean
+    -
+      value: 'Head of Department'
+      label: 'Head of Department'
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

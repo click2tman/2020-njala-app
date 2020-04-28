@@ -1,0 +1,21 @@
+uuid: c1a49711-7cd3-496f-930c-99ec5521aa80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_type
+    - node.type.faculty_and_staff
+  module:
+    - options
+id: node.faculty_and_staff.field_faculty_type
+field_name: field_faculty_type
+entity_type: node
+bundle: faculty_and_staff
+label: 'Faculty Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

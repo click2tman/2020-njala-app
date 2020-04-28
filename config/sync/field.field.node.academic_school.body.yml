@@ -1,0 +1,22 @@
+uuid: c88eccbe-7407-461c-92a3-a60af3e293aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.academic_school
+  module:
+    - text
+id: node.academic_school.body
+field_name: body
+entity_type: node
+bundle: academic_school
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

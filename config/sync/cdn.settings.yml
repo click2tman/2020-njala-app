@@ -1,0 +1,20 @@
+langcode: en
+status: false
+mapping:
+  type: simple
+  domain: din3zjhvjwbd9.cloudfront.net
+  conditions:
+    extensions:
+      - jpg
+      - png
+      - css
+      - js
+      - jpeg
+      - zip
+farfuture:
+  status: true
+stream_wrappers:
+  - public
+  - public
+_core:
+  default_config_hash: 9PVDdkhm4-5kN2tUq2sdhd6su_JtzIvrEsaWgjnYaM0

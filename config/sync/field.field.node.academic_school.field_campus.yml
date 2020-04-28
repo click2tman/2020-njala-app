@@ -1,0 +1,28 @@
+uuid: 5db84360-459b-495a-b20f-d0a0ca5e32a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campus
+    - node.type.academic_school
+    - node.type.landing_page
+id: node.academic_school.field_campus
+field_name: field_campus
+entity_type: node
+bundle: academic_school
+label: Campus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      landing_page: landing_page
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

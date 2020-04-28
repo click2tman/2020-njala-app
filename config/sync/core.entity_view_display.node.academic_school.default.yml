@@ -1,0 +1,37 @@
+uuid: 398784d2-0803-41b5-8dc5-2c32cc4772fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.academic_school.body
+    - field.field.node.academic_school.field_campus
+    - node.type.academic_school
+  module:
+    - text
+    - user
+id: node.academic_school.default
+targetEntityType: node
+bundle: academic_school
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_campus:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

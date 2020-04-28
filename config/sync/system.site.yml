@@ -1,0 +1,15 @@
+uuid: 4eaf4e4b-5da2-46bf-bb57-8c4987edbba7
+name: 'Njala University Admissions Portal'
+mail: noreply@njala.edu.sl
+slogan: ''
+page:
+  403: /node/3
+  404: /node/2
+  front: /node/111
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: info@njala.edu.sl

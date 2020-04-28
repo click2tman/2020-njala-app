@@ -1,0 +1,14 @@
+uuid: 545cfb3d-c482-4c0a-b46f-f03b73df9aed
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dean
+  module:
+    - user
+id: user_add_role_action.dean
+label: 'Add the Dean role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dean

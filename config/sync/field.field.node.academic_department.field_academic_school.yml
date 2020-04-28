@@ -1,0 +1,28 @@
+uuid: 4bf51202-20d1-4cf9-bd08-8ae95715af3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academic_school
+    - node.type.academic_department
+    - node.type.academic_school
+id: node.academic_department.field_academic_school
+field_name: field_academic_school
+entity_type: node
+bundle: academic_department
+label: 'Academic School'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      academic_school: academic_school
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

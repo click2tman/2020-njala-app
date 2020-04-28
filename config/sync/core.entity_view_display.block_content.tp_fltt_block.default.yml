@@ -1,0 +1,22 @@
+uuid: c2ac71c0-0535-46eb-9db3-115a37590c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_fltt_block
+    - field.field.block_content.tp_fltt_block.body
+  module:
+    - text
+id: block_content.tp_fltt_block.default
+targetEntityType: block_content
+bundle: tp_fltt_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

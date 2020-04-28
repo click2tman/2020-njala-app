@@ -1,0 +1,19 @@
+uuid: e480e00f-8fd0-484e-b621-0efb2ad0e24c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tp_position
+    - node.type.faculty_and_staff
+id: node.faculty_and_staff.field_tp_position
+field_name: field_tp_position
+entity_type: node
+bundle: faculty_and_staff
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

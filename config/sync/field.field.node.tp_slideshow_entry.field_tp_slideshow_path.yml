@@ -1,0 +1,19 @@
+uuid: 015cff60-b99a-41f1-a6ae-a205c2a570f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tp_slideshow_path
+    - node.type.tp_slideshow_entry
+id: node.tp_slideshow_entry.field_tp_slideshow_path
+field_name: field_tp_slideshow_path
+entity_type: node
+bundle: tp_slideshow_entry
+label: 'Slideshow entry path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: 1f99d8a2-ada3-4fdf-9824-6a25312c72a1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b014e45a-f5c5-4f42-8535-eae263e83ded'
+  module:
+    - block_content
+    - system
+  theme:
+    - njalaapp
+id: contactinformationfooter
+theme: njalaapp
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:b014e45a-f5c5-4f42-8535-eae263e83ded'
+settings:
+  id: 'block_content:b014e45a-f5c5-4f42-8535-eae263e83ded'
+  label: 'Contact Information Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

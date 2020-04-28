@@ -1,0 +1,59 @@
+uuid: 4cc03b41-b1d3-4db4-9f07-ff470cc04794
+langcode: en
+status: true
+dependencies: {  }
+id: send_email_after_updating_webform
+label: 'Send Email After Updating Webform'
+events:
+  -
+    event_name: updating_submission
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 5640ec74-78f2-4009-8fa9-76540f84bf2c
+  conditions:
+    id: rules_and
+    uuid: 8fe2d257-4902-486a-adea-3dd7448f0da2
+    conditions:
+      -
+        id: rules_condition
+        uuid: 9cdb9511-ea3a-4cd3-86c5-1d4ba95210f4
+        context_values:
+          selected_webform_id: contact
+        context_mapping:
+          submitted_webform_info: webform_info
+        provides_mapping: {  }
+        condition_id: webform_name
+        negate: false
+        context_processors: {  }
+  actions:
+    id: rules_action_set
+    uuid: e2539567-9a32-4e50-8654-511f23974789
+    actions:
+      -
+        id: rules_action
+        uuid: bd29b19d-7af6-41f4-8be5-443dc2fc4bdf
+        context_values:
+          to:
+            - '{{webform_fields.email}}'
+          subject: 'Your Contact Form has been updated'
+          message: 'Testing webform updates'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_send_email

@@ -1,0 +1,15 @@
+uuid: c4359c5c-1974-4756-b7a1-5821568baee7
+langcode: en
+status: true
+dependencies: {  }
+name: tp_slideshow_boxed
+label: 'Slideshow Boxed Width (1140x650)'
+effects:
+  bb94f69c-e472-4d5e-8e18-5dd18a2e9a95:
+    uuid: bb94f69c-e472-4d5e-8e18-5dd18a2e9a95
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1140
+      height: 650
+      anchor: center-center

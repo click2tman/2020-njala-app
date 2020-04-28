@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Styles for NjalaAPP's flippy pager.
+ */
+.flippy-link {
+  z-index: 0;
+}
+.flippy-link a {
+  display: block;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.flippy-label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 25px;
+  z-index: -1;
+}
+.flippy svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  z-index: -1;
+}
+.flippy-next svg {
+  right: 0;
+}
+.flippy-previous svg {
+  left: 0;
+}

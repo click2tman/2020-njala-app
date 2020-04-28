@@ -1,0 +1,48 @@
+uuid: 24616a75-797d-4302-b6ae-1d7e9b44b86e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f073731-85be-4403-a3d9-55618eb2a34d'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - njalaapp
+id: gettingstartedforauthenticatedusers
+theme: njalaapp
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:3f073731-85be-4403-a3d9-55618eb2a34d'
+settings:
+  id: 'block_content:3f073731-85be-4403-a3d9-55618eb2a34d'
+  label: 'Getting Started for Authenticated Users'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/getting-started\r\n/node/97\r\n/home\r\n/node/111\r\n/admissions-requirements\r\n/node/6"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      prospective_student: prospective_student
+      current_student: current_student
+      department_head: department_head
+      dean: dean
+      secretariat: secretariat
+      webform_creator: webform_creator
+      webform_reviewer: webform_reviewer
+      administration: administration
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

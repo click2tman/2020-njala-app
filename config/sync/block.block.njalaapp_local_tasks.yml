@@ -1,0 +1,22 @@
+uuid: 9aa5a289-6978-4a79-864f-5b893234f868
+langcode: en
+status: true
+dependencies:
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: C4xRnWxPbBPcD6K5OTDe8d817X7DvjkzuV-lKcjAdXw
+id: njalaapp_local_tasks
+theme: njalaapp
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

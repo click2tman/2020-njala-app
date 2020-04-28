@@ -1,0 +1,8 @@
+uuid: cd60bd31-2ef7-4e9b-8d23-eb68e02bdc6e
+langcode: en
+status: true
+dependencies: {  }
+name: 'SL Admin Boundaries'
+vid: sl_admin_boundaries
+description: 'Sierra Leone Administrative Regions'
+weight: 0

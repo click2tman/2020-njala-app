@@ -1,0 +1,16 @@
+uuid: ed3eb876-b97a-4b85-9b11-a58d3b6df1fb
+langcode: en
+status: true
+dependencies: {  }
+name: tp_landscape_image
+label: 'Landscape Image (1110x600)'
+effects:
+  a657eca7-3fe5-460b-831a-43c599741a14:
+    uuid: a657eca7-3fe5-460b-831a-43c599741a14
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1110
+      height: 600
+      anchor: center-center
+pipeline: __default__

@@ -1,0 +1,21 @@
+uuid: d6572eaa-4107-4e14-885d-e778c764727f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programme_level
+    - node.type.academic_courses
+  module:
+    - options
+id: node.academic_courses.field_programme_level
+field_name: field_programme_level
+entity_type: node
+bundle: academic_courses
+label: 'Course Level'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+uuid: 50df6f1d-ab4b-4a25-9926-b9bc632168ae
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b7fe0dba-587c-488e-936d-ac66a158eb5d'
+  module:
+    - block_content
+  theme:
+    - njalaapp
+id: headericons
+theme: njalaapp
+region: header_top_highlighted_first
+weight: 0
+provider: null
+plugin: 'block_content:b7fe0dba-587c-488e-936d-ac66a158eb5d'
+settings:
+  id: 'block_content:b7fe0dba-587c-488e-936d-ac66a158eb5d'
+  label: 'Header Icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's testimonials carousel.
+ */
+.tp-carousel-testimonials {
+  padding: 0 0 25px;
+}
+.tp-carousel-testimonials .tp-carousel-item {
+  margin: 0 15px;
+}
+.tp-carousel-testimonials .owl-nav {
+  top: auto;
+  bottom: 0px;
+  margin-top: 10px;
+  position: static !important;
+  height: 40px;
+}
+.tp-carousel-testimonials .owl-nav .owl-next {
+  right: auto;
+  left: 50px;
+}
+.tp-carousel-testimonials .owl-dots {
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 10px;
+}

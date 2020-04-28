@@ -1,0 +1,19 @@
+uuid: 6e08c6d8-0273-4af3-ad08-b458acc72260
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_faculty_and_staff
+field_name: field_faculty_and_staff
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

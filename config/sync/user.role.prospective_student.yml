@@ -1,0 +1,16 @@
+uuid: 8201ea5c-c14b-49d0-8570-7af4eee232f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Prospective Student'
+id: prospective_student
+label: 'Prospective Student'
+weight: -8
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'view own unpublished media'

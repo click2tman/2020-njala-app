@@ -1,0 +1,24 @@
+uuid: 1d80403a-17f2-4efa-bcfb-5d1d831ac5ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: all_others
+label: 'All Others'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  74bc43a3-6a4c-4f54-b6af-2e0d57850038:
+    id: node_type
+    bundles:
+      page: page
+      tp_slideshow_entry: tp_slideshow_entry
+      webform: webform
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 74bc43a3-6a4c-4f54-b6af-2e0d57850038
+selection_logic: and
+weight: -5
+relationships: {  }

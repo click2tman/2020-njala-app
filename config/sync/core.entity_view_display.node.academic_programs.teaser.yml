@@ -1,0 +1,30 @@
+uuid: e77ba655-60af-444f-8926-ecbb23672ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.academic_programs.body
+    - node.type.academic_programs
+  module:
+    - text
+    - user
+id: node.academic_programs.teaser
+targetEntityType: node
+bundle: academic_programs
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

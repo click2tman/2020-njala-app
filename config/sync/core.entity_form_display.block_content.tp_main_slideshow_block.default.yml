@@ -1,0 +1,88 @@
+uuid: b2429e43-42a3-4c8f-91b6-9b58337240be
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_main_slideshow_block
+    - field.field.block_content.tp_main_slideshow_block.field_tp_main_slideshow_layout
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_background_opacity
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_bullets_position
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_effect
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_effect_duration
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_ignore_header_height
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_initial_height
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_navigation_style
+    - field.field.block_content.tp_main_slideshow_block.field_tp_ms_touch_swipe_nav
+id: block_content.tp_main_slideshow_block.default
+targetEntityType: block_content
+bundle: tp_main_slideshow_block
+mode: default
+content:
+  field_tp_main_slideshow_layout:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_ms_background_opacity:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tp_ms_bullets_position:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_ms_effect:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_ms_effect_duration:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tp_ms_ignore_header_height:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_tp_ms_initial_height:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tp_ms_navigation_style:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_ms_touch_swipe_nav:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

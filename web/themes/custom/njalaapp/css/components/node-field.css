@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node field component.
+ */
+.node--view-mode-full .field {
+  margin-bottom: 30px;
+}
+.node--view-mode-teaser .field {
+  margin-bottom: 20px;
+}
+.node--view-mode-full .field p:last-child,
+.node--view-mode-teaser .field p:last-child {
+  padding-bottom: 0;
+}
+.node--view-mode-full .field .field,
+.node--view-mode-teaser .field .field {
+  margin-bottom: 0;
+}

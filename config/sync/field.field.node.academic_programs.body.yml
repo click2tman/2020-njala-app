@@ -1,0 +1,22 @@
+uuid: 38de87f0-75b1-4806-a330-34e224f9aa1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.academic_programs
+  module:
+    - text
+id: node.academic_programs.body
+field_name: body
+entity_type: node
+bundle: academic_programs
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

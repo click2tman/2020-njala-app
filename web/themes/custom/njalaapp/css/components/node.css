@@ -1,0 +1,83 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node component.
+ */
+
+/*Node*/
+.node--view-mode-teaser {
+  padding: 0 0 30px 0;
+  margin-bottom: 40px;
+}
+.node__header {
+  padding: 0 0 5px;
+}
+.node__header .field.field--name-user-picture {
+  padding: 0 0 5px 0;
+  max-width: 55px;
+  margin: 0;
+}
+.field.field--name-user-picture {
+  margin-right: 0;
+  margin-left: 0;
+}
+.node__title {
+  font-size: 40px;
+  margin-top: 0px;
+}
+.node--view-mode-teaser .node__header h2 {
+  margin-bottom: 1.5rem;
+}
+.node__container {
+  position: relative;
+}
+.feed-icon {
+  display: block;
+  margin: 0px 0 60px;
+}
+.field--name-user-picture img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/*Post submitted info*/
+.node__header .profile {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.node__header .profile img {
+  max-width: 40px;
+}
+.node--type-article .node__meta,
+.node--type-page .node__meta {
+  font-size: 14px;
+  margin: 0 0 10px;
+  display: inline-block;
+}
+.node__submitted-info ~ .comments-count__counter:before {
+  content: "-";
+}
+
+/*Subheader*/
+.field--name-field-tp-subheader-body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/*subtitle*/
+.field--name-field-tp-subtitle {
+  font-size: 18px;
+  line-height: 1.66;
+  font-weight: 400;
+}
+.node--view-mode-full .field.field--name-field-tp-subtitle {
+  margin-bottom: 15px;
+}
+.region--dark-typography .field--name-field-tp-subtitle {
+  color: #363636;
+}
+
+/*teaser of post node*/
+.node--view-mode-teaser .field--name-field-tp-pst-image {
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,95 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node in teaser tile view.
+ */
+.node--view-mode-tp-featured-teaser {
+  margin-bottom: 60px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #707070;
+  padding-bottom: 40px;
+}
+.region--light-typography .node--view-mode-tp-featured-teaser {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.node--view-mode-tp-featured-teaser .field--name-field-tp-pst-image {
+  margin-bottom: 20px;
+}
+.node--view-mode-tp-featured-teaser h2.node__title {
+  font-size: 40px;
+}
+@media (min-width: 1200px) {
+  .node--view-mode-tp-featured-teaser h2.node__title {
+    margin: 0 0 20px;
+  }
+  .node--view-mode-tp-featured-teaser .field--name-field-tp-pst-body {
+    margin-bottom: 10px;
+  }
+}
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term,
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0 0 5px;
+  padding: 0;
+}
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term:before,
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item:before {
+  content: "";
+}
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item a {
+  font-size: 14px;
+  padding: 0.1em 0.6em;
+}
+.region--dark-typography .node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--dark-typography .node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item a {
+  color: #000000;
+}
+.node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term:not(.field--label-above)::after {
+  content: "";
+}
+@media (min-width: 1200px) {
+  .node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term,
+  .node--view-mode-tp-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item {
+    margin: 0 0 10px;
+  }
+}
+.node--view-mode-tp-featured-teaser .node__meta {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.region--dark-typography .node--view-mode-tp-featured-teaser .node__meta {
+  color: #707070;
+}
+@media (max-width: 991px) {
+  .node--view-mode-tp-featured-teaser .field--name-field-tp-pst-body {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .node--view-mode-tp-featured-teaser .col-lg-4 {
+    padding-bottom: 70px;
+  }
+  .node--view-mode-tp-featured-teaser .featured-teaser-text-area {
+    padding-bottom: 50px;
+  }
+  .node--view-mode-tp-featured-teaser a.link--bordered {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+.node--view-mode-tp-featured-teaser .profile {
+  display: inline-block;
+}
+.node--view-mode-tp-featured-teaser .field--name-user-picture img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .node--view-mode-tp-featured-teaser a.button {
+    display: none;
+  }
+}
+.node--view-mode-tp-featured-teaser .node__meta {
+  font-size: 14px;
+}

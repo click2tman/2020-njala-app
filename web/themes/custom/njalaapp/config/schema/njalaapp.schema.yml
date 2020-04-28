@@ -1,0 +1,5 @@
+# Schema for the configuration files of the NjalaAPP theme.
+
+njalaapp.settings:
+  type: theme_settings
+  label: 'NjalaAPP settings'

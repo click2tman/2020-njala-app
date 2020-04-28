@@ -1,0 +1,34 @@
+uuid: ccd3ad72-72c8-40a5-9355-44514a31c168
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access contextual links'
+  - 'access drupalchat'
+  - 'access printfriendly'
+  - 'access tour'
+  - 'entity print access bundle academic_courses'
+  - 'entity print access bundle academic_department'
+  - 'entity print access bundle academic_programs'
+  - 'entity print access bundle academic_school'
+  - 'entity print access bundle distance_learning_application_fo'
+  - 'entity print access bundle feedback'
+  - 'entity print access bundle graduate_and_postgraduate_applic'
+  - 'entity print access bundle undergraduate_application_form'
+  - 'entity print access bundle user_satisfaction_survey'
+  - 'entity print access bundle webform'
+  - 'entity print access type file'
+  - 'entity print access type media'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view own profile'
+  - 'view own unpublished content'
+  - 'view own unpublished profile'
+  - 'view own webform submission'

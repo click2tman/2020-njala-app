@@ -1,0 +1,107 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node in teaser tile view.
+ */
+.node--view-mode-tp-metro-tile {
+  margin-bottom: 16px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .node--view-mode-tp-metro-tile {
+    margin-bottom: 11px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .node--view-mode-tp-metro-tile {
+    margin-bottom: 8px;
+  }
+}
+.view-tp-posts-metro-tiles .view-content {
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+}
+.view-tp-posts-metro-tiles .view-content:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.view-tp-posts-metro-tiles .views-row {
+  float: left;
+  width: 100%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+@media (min-width: 768px) {
+  .view-tp-posts-metro-tiles .views-row {
+    width: 49%;
+  }
+}
+@media (min-width: 992px) {
+  .view-tp-posts-metro-tiles .views-row {
+    width: 24%;
+  }
+}
+.view-tp-posts-metro-tiles .images-container {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .view-tp-posts-metro-tiles .views-row.view--current-page--0:first-child,
+  .view-tp-posts-metro-tiles .views-row.view--current-page--0:nth-child(2),
+  .view-tp-posts-metro-tiles .views-row.view--current-page--0:nth-child(3),
+  .view-tp-posts-metro-tiles .views-row.view--current-page--:first-child,
+  .view-tp-posts-metro-tiles .views-row.view--current-page--:nth-child(2),
+  .view-tp-posts-metro-tiles .views-row.view--current-page--:nth-child(3) {
+    width: 49%;
+  }
+}
+.node--view-mode-tp-metro-tile .metro-tile-container {
+  position: relative;
+}
+.node--view-mode-tp-metro-tile .metro-tile__caption {
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 0;
+  right: auto;
+  left: 10%;
+  padding: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 80%;
+  max-width: 80%;
+  z-index: 10;
+  text-align: center;
+}
+.node--view-mode-tp-metro-tile:hover .metro-tile__caption {
+  padding-bottom: 40px;
+}
+.node--view-mode-tp-metro-tile .metro-tile__caption a {
+  color: #333333;
+  text-decoration: none;
+}
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term,
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0;
+  padding: 0;
+}
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term:before,
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term.field__item:before {
+  content: "";
+}
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term.field__item a {
+  font-size: 14px;
+  color: #707070;
+  padding: 0.1em 0.6em;
+}
+.node--view-mode-tp-metro-tile .field--entity-reference-target-type-taxonomy-term:not(.field--label-above)::after {
+  content: "";
+}
+
+/* Hide category in mobile views for promoted posts view block */
+@media (max-width: 767px) {
+  .view-tp-promoted-posts .node--view-mode-tp-metro-tile .metro-tile__caption .field--entity-reference-target-type-taxonomy-term {
+    display: none;
+  }
+}

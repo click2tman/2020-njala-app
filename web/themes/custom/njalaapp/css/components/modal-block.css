@@ -1,0 +1,45 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's modal block.
+ */
+.modal-open .header-container,
+.modal-open .page-container {
+  z-index: auto;
+}
+.block-type--tp-modal .modal {
+  background-color: transparent;
+}
+.block-type--tp-modal .modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.modal-backdrop.show {
+  opacity: 1;
+}
+.block-type--tp-modal .modal-icon-button {
+  -webkit-appearance: none;
+  border-width: 0;
+  display: block;
+  margin-left: auto;
+  margin-top: 3px;
+  font-size: 18px;
+}
+.block-type--tp-modal .modal-icon-button:not(.button) {
+  background-color: transparent;
+}
+.block-type--tp-modal .modal-icon-button.button {
+  border-width: 1px;
+}
+.block-type--tp-modal button.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 36px;
+  opacity: 1;
+  color: #ffffff;
+  text-shadow: none;
+}

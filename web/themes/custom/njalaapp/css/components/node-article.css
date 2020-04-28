@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's article content type.
+ */
+.node--type-article .node__meta {
+  margin-bottom: 0;
+}
+.node--type-article.node--view-mode-tp-featured-teaser .node__meta {
+  margin-bottom: 10px;
+}
+.node--type-article .node__header {
+  margin-bottom: 1em;
+}
+.node--type-article .node__meta .inline-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.page-node-type-article .page-title {
+  margin-bottom: 10px;
+}

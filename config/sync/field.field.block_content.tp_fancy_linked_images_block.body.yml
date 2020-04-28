@@ -1,0 +1,22 @@
+uuid: 7cdcad53-87e2-4fd7-b072-914d3c079645
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_fancy_linked_images_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.tp_fancy_linked_images_block.body
+field_name: body
+entity_type: block_content
+bundle: tp_fancy_linked_images_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: c143bb79-7b7d-42b3-b5ca-c099c942ae67
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_fancy_linked_images_block
+    - field.field.block_content.tp_fancy_linked_images_block.body
+  module:
+    - text
+id: block_content.tp_fancy_linked_images_block.default
+targetEntityType: block_content
+bundle: tp_fancy_linked_images_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

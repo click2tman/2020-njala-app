@@ -1,0 +1,62 @@
+uuid: b5dc0614-74e8-4b7d-a025-bf263acdaf04
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tp_background_image_block
+    - field.field.block_content.tp_background_image_block.field_tp_background_image
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_color
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_layout_mode
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_opacity
+    - field.field.block_content.tp_background_image_block.field_tp_bg_image_positioning
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.tp_background_image_block.default
+targetEntityType: block_content
+bundle: tp_background_image_block
+mode: default
+content:
+  field_tp_background_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_tp_bg_image_color:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_bg_image_layout_mode:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tp_bg_image_opacity:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tp_bg_image_positioning:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: c707ddcf-9b5f-4178-80cf-2143fea22490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campus
+    - node.type.academic_courses
+    - node.type.landing_page
+  content:
+    - 'node:landing_page:03577bce-f1d8-4a66-a078-186e63e7a23b'
+id: node.academic_courses.field_campus
+field_name: field_campus
+entity_type: node
+bundle: academic_courses
+label: Campus
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 03577bce-f1d8-4a66-a078-186e63e7a23b
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      landing_page: landing_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

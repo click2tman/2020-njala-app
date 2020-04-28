@@ -1,0 +1,74 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's service content type.
+ */
+.node--type-tp-service .node__header {
+  padding: 0;
+}
+
+/*page title*/ 
+.layout-no-sidebars.page-node-type-tp-service .page-title {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .layout-no-sidebars.page-node-type-tp-service .page-title {
+    font-size: 70px;
+  }
+}
+
+/*subheader field*/
+.node--type-tp-service .field--name-field-tp-subheader-body {
+  font-size: 22px;
+  padding: 0;
+  line-height: 1.5;
+}
+.layout-no-sidebars .node--type-tp-service .field--name-field-tp-subheader-body {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .layout-no-sidebars .node--type-tp-service .field--name-field-tp-subheader-body {
+    padding: 0 20%;
+  }
+}
+
+/*price field*/
+.node--type-tp-service .field--name-field-tp-price {
+  font-size: 42px;
+}
+
+/*buy link field*/
+.node--type-tp-service .field--name-field-tp-buy-link a {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-align: center;
+  color: #000000;
+  border-color: #ffffff;
+}
+.headings-wide-spacing-enabled .node--type-tp-service .field--name-field-tp-buy-link a {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.node--type-tp-service .field--name-field-tp-buy-link a:hover {
+  color: #000000;
+}
+.region--light-typography .node--type-tp-service .field--name-field-tp-buy-link a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}
+.region--light-typography .node--type-tp-service .field--name-field-tp-buy-link a:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}

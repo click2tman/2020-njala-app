@@ -1,0 +1,21 @@
+uuid: f9443a3b-94d9-4d51-b643-85862df0909f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expiration_date
+    - node.type.faculty_and_staff
+  module:
+    - datetime
+id: node.faculty_and_staff.field_expiration_date
+field_name: field_expiration_date
+entity_type: node
+bundle: faculty_and_staff
+label: 'Expiration Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

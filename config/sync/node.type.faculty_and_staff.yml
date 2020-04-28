@@ -1,0 +1,17 @@
+uuid: 31b4289f-a949-4823-b73c-2a168b2d9c29
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Faculty and Staff'
+type: faculty_and_staff
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

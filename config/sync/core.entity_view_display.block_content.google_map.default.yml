@@ -1,0 +1,23 @@
+uuid: 7a2bddd3-33c0-4660-b960-81f8cae05278
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.google_map
+    - field.field.block_content.google_map.field_map_location
+_core:
+  default_config_hash: jtaU_93c5qgk4igJIOdlmtH61myWAgVXYmcXgwPLczY
+id: block_content.google_map.default
+targetEntityType: block_content
+bundle: google_map
+mode: default
+content:
+  field_map_location:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

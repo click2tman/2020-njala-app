@@ -1,0 +1,18 @@
+uuid: 663359ab-66fd-49f0-b5f3-85c103c0c8a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Academic School'
+type: academic_school
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,120 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node in teaser tile video view.
+ */
+.node--view-mode-tp-teaser-tile-video {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.node--view-mode-tp-teaser-tile-video h4 {
+  margin-bottom: 15px;
+}
+.node--view-mode-tp-teaser-tile-video h4 a {
+  text-decoration: none;
+}
+.node--view-mode-tp-teaser-tile-video .node__header {
+  padding-bottom: 0;
+}
+.node--view-mode-tp-teaser-tile-video .field--name-field-tp-pst-video {
+  margin-bottom: 15px;
+}
+.node--view-mode-tp-teaser-tile-video .field--name-field-video .videos-container,
+.node--view-mode-tp-teaser-tile-video .field--name-field-tp-pst-video .videos-container {
+  margin-bottom: 0;
+}
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term,
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0 0 5px;
+  padding: 0;
+}
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term:before,
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term.field__item:before {
+  content: "";
+}
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term.field__item a {
+  font-size: 14px;
+  padding: 0.1em 0.6em;
+}
+.region--dark-typography .node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--dark-typography .node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term.field__item a {
+  color: #000000;
+}
+
+/* article node */
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term:not(.field--label-above)::after {
+  content: "";
+}
+.node--view-mode-tp-teaser-tile-video .node__meta {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.node--view-mode-tp-teaser-tile-video .node__meta .field--name-uid {
+  margin-right: 20px;
+}
+.region--light-typography .node--view-mode-tp-teaser-tile-video .node__meta,
+.region--light-typography .node--view-mode-tp-teaser-tile-video .node__meta a {
+  color: #dddddd;
+}
+.region--dark-typography .node--view-mode-tp-teaser-tile-video .node__meta {
+  color: #707070;
+}
+.node--view-mode-tp-teaser-tile-video .profile {
+  display: inline-block;
+}
+.node--view-mode-tp-teaser-tile-video .field--name-user-picture img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+.video-and-tag-container {
+  position: relative;
+}
+.node--view-mode-tp-teaser-tile-video .field--name-field-tp-pst-category.field--entity-reference-target-type-taxonomy-term.field__item {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 20px 0 20px;
+  left: 0;
+  right: 0;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: center;
+  margin-bottom: 0px;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+.region--white-background .node--view-mode-tp-teaser-tile-video .field--name-field-tp-pst-category.field--entity-reference-target-type-taxonomy-term.field__item {
+  background-color: #ffffff;
+}
+.region--gray-background .node--view-mode-tp-teaser-tile-video .field--name-field-tp-pst-category.field--entity-reference-target-type-taxonomy-term.field__item {
+  background-color: #f7f7f7;
+}
+.region--black-background .node--view-mode-tp-teaser-tile-video .field--name-field-tp-pst-category.field--entity-reference-target-type-taxonomy-term.field__item {
+  background-color: #000000;
+}
+.node--view-mode-tp-teaser-tile-video .node__content {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .node--sticky a.button {
+    display: none;
+  }
+}
+.view-tp-posts-grid .js-pager__items {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.node--view-mode-tp-teaser-tile-video .field--entity-reference-target-type-taxonomy-term.field__item a {
+  display: inline-block;
+}
+.node--view-mode-tp-teaser-tile-video .video-and-tag-container:hover .field--name-field-tp-pst-category.field--entity-reference-target-type-taxonomy-term.field__item {
+  padding-bottom: 20px;
+}
+.region--light-typography .node--view-mode-tp-teaser-tile-video .username {
+  text-decoration: none;
+}
+.node--view-mode-tp-teaser-tile-video .node__meta {
+  font-size: 14px;
+}

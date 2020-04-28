@@ -1,0 +1,52 @@
+/**
+ * @file
+ * Visual styles for taxonomy terms in NjalaAPP.
+ */
+.field--entity-reference-target-type-taxonomy-term:not(.field--label-above) {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-left: 25px;
+}
+.field--entity-reference-target-type-taxonomy-term:not(.field--label-above):after {
+  content: "\f02b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  font-size: 14px;
+  left: 1px;
+  top: 50%;
+  margin-top: -10px;
+}
+.field--entity-reference-target-type-taxonomy-term,
+.field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0 0 15px 0;
+}
+.field--entity-reference-target-type-taxonomy-term + .field--entity-reference-target-type-taxonomy-term {
+  margin-top: 0;
+}
+.field--entity-reference-target-type-taxonomy-term.field__item {
+  display: inline-block;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px 10px 2px 0;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a,
+.field--entity-reference-target-type-taxonomy-term.field__item a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+}
+.region--light-typography .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--light-typography .field--entity-reference-target-type-taxonomy-term.field__item a {
+  color: #dddddd;
+}
+.region--light-typography .field--entity-reference-target-type-taxonomy-term .field__item a:hover,
+.region--light-typography .field--entity-reference-target-type-taxonomy-term.field__item a:hover,
+.region--light-typography .field--entity-reference-target-type-taxonomy-term .field__item a:focus,
+.region--light-typography .field--entity-reference-target-type-taxonomy-term.field__item a:focus {
+  color: #000000;
+}

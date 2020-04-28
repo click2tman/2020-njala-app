@@ -1,0 +1,31 @@
+uuid: 78037082-5f36-4a2f-9a07-76097aa217ce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:81ed6599-9839-4c4f-b31b-7568f7a6c230'
+  module:
+    - block_content
+    - system
+  theme:
+    - njalaapp
+id: contactdetails
+theme: njalaapp
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:81ed6599-9839-4c4f-b31b-7568f7a6c230'
+settings:
+  id: 'block_content:81ed6599-9839-4c4f-b31b-7568f7a6c230'
+  label: 'Contact Details'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

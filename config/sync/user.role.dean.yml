@@ -1,0 +1,32 @@
+uuid: d91fe50f-2274-48a4-873e-cf560be020d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Dean of School'
+id: dean
+label: 'Dean of School'
+weight: -5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access profile overview'
+  - 'access site in maintenance mode'
+  - 'access user profiles'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'download any webform submission managed files'
+  - 'edit own webform submission'
+  - 'use moderation dashboard'
+  - 'use moderation sidebar'
+  - 'view all revisions'
+  - 'view any profile'
+  - 'view any webform submission'
+  - 'view own unpublished media'
+  - 'view the administration theme'

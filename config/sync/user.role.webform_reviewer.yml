@@ -1,0 +1,25 @@
+uuid: d845ba42-dc2c-4866-a4c9-83deedd999e3
+langcode: en
+status: true
+dependencies: {  }
+id: webform_reviewer
+label: 'Webform reviewer'
+weight: -1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'delete any webform content'
+  - 'edit any webform content'
+  - 'edit own webform submission'
+  - 'use moderation dashboard'
+  - 'use moderation sidebar'
+  - 'view all revisions'
+  - 'view own unpublished media'
+  - 'view the administration theme'

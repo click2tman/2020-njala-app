@@ -1,0 +1,132 @@
+uuid: 85f19d4f-8ff0-432b-89c2-edcccf04eedb
+langcode: en
+status: true
+dependencies: {  }
+id: njala_undergraduate_admission_approval
+label: 'Njala Undergraduate Admission Approval'
+app_group: 0
+canvas_height: 900
+canvas_width: 800
+default_workflow_timeline_stage_count: 0
+show_details: true
+validated: true
+views_attached:
+  maestro_completed_tasks:
+    view_machine_name: maestro_completed_tasks
+    view_weight: -9
+    view_display: default;Master
+  maestro_entity_identifiers:
+    view_machine_name: maestro_entity_identifiers
+    view_weight: -10
+    view_display: 'taskconsole_display;Task Console Display'
+variables:
+  initiator:
+    variable_id: initiator
+    variable_value: '0'
+  workflow_timeline_stage_count:
+    variable_id: workflow_timeline_stage_count
+    variable_value: ''
+  workflow_current_stage:
+    variable_id: workflow_current_stage
+    variable_value: ''
+  workflow_current_stage_message:
+    variable_id: workflow_current_stage_message
+    variable_value: ''
+tasks:
+  start:
+    id: start
+    tasktype: MaestroStart
+    label: Start
+    nextstep: undergrad_admission_submitted
+    nextfalsestep: ''
+    top: '45'
+    left: '45'
+    assignby: fixed
+    assignto: engine
+  end:
+    id: end
+    tasktype: MaestroEnd
+    label: End
+    nextstep: ''
+    nextfalsestep: ''
+    top: '340'
+    left: '260'
+    assignby: fixed
+    assignto: engine
+  undergrad_admission_submitted:
+    id: undergrad_admission_submitted
+    label: 'Student Submits Undergraduate Application'
+    tasktype: MaestroWebform
+    nextstep: undergrad_app_academic_affairs
+    nextfalsestep: ''
+    top: '40'
+    left: '270'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    data:
+      unique_id: submission
+      webform_machine_name: contact
+      modal: notmodal
+      skip_webform_handlers: 0
+      webform_nodes_attached_to: none
+      use_nodes_attached: 0
+      webform_nodes_attached_variable: none
+      redirect_to: taskconsole
+      show_edit_form: 0
+    assigned: 'role:fixed:secretariat,role:fixed:department_head,role:fixed:dean,role:fixed:administration'
+    runonce: false
+    handler: ''
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignments: 'role:variable:initiator:assignment,role:fixed:secretariat:assignment'
+      notification_assignment_subject: 'Custom Assignment Subject TpISENT'
+      notification_assignment: 'Custom Assignment Message TpISENT'
+      notification_reminder_subject: 'Custom Reminder Subject TpISENT'
+      notification_reminder: 'Custom Reminder Message TpISENT'
+      notification_escalation_subject: 'Custom Escalation Subject TpISENT'
+      notification_escalation: 'Custom Escalation Message TpISENT'
+      reminder_after: 0
+      escalation_after: 0
+  undergrad_app_academic_affairs:
+    id: undergrad_app_academic_affairs
+    label: 'Academic Affairs'
+    tasktype: MaestroInteractive
+    nextstep: end
+    nextfalsestep: ''
+    top: '180'
+    left: '260'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    handler: maestro_show_message_form
+    data:
+      modal: modal
+      redirect_to: taskconsole
+    assigned: 'role:fixed:secretariat'
+    runonce: false
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignments: 'role:fixed:secretariat:assignment'
+      notification_assignment_subject: ''
+      notification_assignment: ''
+      notification_reminder_subject: ''
+      notification_reminder: ''
+      notification_escalation_subject: ''
+      notification_escalation: ''
+      reminder_after: 0
+      escalation_after: 0

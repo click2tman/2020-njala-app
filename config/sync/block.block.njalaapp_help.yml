@@ -1,0 +1,22 @@
+uuid: 58b3c595-0f7f-4df5-a725-d97bbc00d676
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: WMZzVo9thqzrALNHq8dm29fQyex3JaJRPeRsg5hieGA
+id: njalaapp_help
+theme: njalaapp
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

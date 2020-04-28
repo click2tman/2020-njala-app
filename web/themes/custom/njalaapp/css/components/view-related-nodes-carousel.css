@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's related nodes carousel.
+ */
+.tp-carousel-related-nodes .tp-carousel-item {
+  margin: 15px;
+}

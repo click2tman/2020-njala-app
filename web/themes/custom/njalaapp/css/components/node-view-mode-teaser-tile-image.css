@@ -1,0 +1,93 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's node in teaser tile view.
+ */
+.node--view-mode-tp-teaser-tile-image {
+  margin-bottom: 16px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .node--view-mode-tp-teaser-tile-image {
+    margin-bottom: 11px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .node--view-mode-tp-teaser-tile-image {
+    margin-bottom: 8px;
+  }
+}
+.node--view-mode-tp-teaser-tile-image .teaser-tile-image-container {
+  position: relative;
+}
+.node--view-mode-tp-teaser-tile-image .teaser-tile-image__caption {
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 0;
+  right: auto;
+  left: 10%;
+  padding: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 80%;
+  max-width: 80%;
+  z-index: 10;
+  text-align: center;
+}
+.node--view-mode-tp-teaser-tile-image:hover .teaser-tile-image__caption {
+  padding-bottom: 40px;
+}
+.node--view-mode-tp-teaser-tile-image .teaser-tile-image__caption a {
+  color: #333333;
+  text-decoration: none;
+}
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term,
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0;
+  padding: 0;
+}
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term:before,
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term.field__item:before {
+  content: "";
+}
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term.field__item a {
+  font-size: 14px;
+  color: #707070;
+  padding: 0.1em 0.6em;
+}
+.node--view-mode-tp-teaser-tile-image .field--entity-reference-target-type-taxonomy-term:not(.field--label-above)::after {
+  content: "";
+}
+
+/* Move caption below image in mobile views */
+@media (max-width: 767px) {
+  .node--view-mode-tp-teaser-tile-image .teaser-tile-image__caption {
+    padding-top: 10px;
+    position: relative;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .node--view-mode-tp-teaser-tile-image .teaser-tile-image__caption h4 {
+    font-size: 20px;
+  }
+  .node--view-mode-tp-teaser-tile-image:hover .teaser-tile-image__caption {
+    padding-bottom: 20px;
+  }
+}
+
+/* Hide category in mobile views */
+@media (max-width: 991px) {
+  .teaser-tile-image__caption .field--entity-reference-target-type-taxonomy-term {
+    display: none;
+  }
+}

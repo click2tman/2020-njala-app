@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Visual styles for NjalaAPP's testimonial content type.
+ */
+.node--type-tp-testimonial .field.field--name-field-tp-testimonial-image {
+  margin: 0 0 20px;
+}
+.node--type-tp-testimonial .field--name-field-tp-testimonial-image img {
+  max-width: 200px;
+}
+.node--type-tp-testimonial .field--name-body {
+  padding: 0 0 0 35px;
+}
+.node--type-tp-testimonial .field--name-field-tp-subtitle {
+  font-size: 12px;
+}
+.node--type-tp-testimonial .field.field--name-body {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.node--type-tp-testimonial .field--name-body p {
+  padding: 0 0 10px;
+  position: relative;
+}
+.node--type-tp-testimonial .field--name-body p:first-child:after {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  content: "";
+  left: -35px;
+  top: 0px;
+  line-height: 1;
+}
+.field--name-field-tp-testimonial-link a {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px 25px;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  margin: 10px 0;
+  text-align: center;
+}
+.field--name-field-tp-testimonial-link a:hover,
+.field--name-field-tp-testimonial-link a:focus {
+  color: #000000;
+}

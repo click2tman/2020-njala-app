@@ -1,0 +1,27 @@
+uuid: 1e17ffa2-ea06-4121-abb8-44d2ccd0c90e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - njalaapp
+_core:
+  default_config_hash: 9E4Rys7HHRW1deBcxS6lk0F2AikZIwH8x8_OIWw0vPI
+id: njalaapp_breadcrumbs
+theme: njalaapp
+region: footer_top_first
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

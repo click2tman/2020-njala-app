@@ -1,0 +1,28 @@
+uuid: d4875a6e-15d6-44c1-8e58-2cecbfad8675
+langcode: en
+status: true
+dependencies: {  }
+id: webform_creator
+label: 'Webform creator'
+weight: -2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'create url aliases'
+  - 'create webform content'
+  - 'edit own webform content'
+  - 'edit own webform submission'
+  - 'use moderation dashboard'
+  - 'use moderation sidebar'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'
+  - 'view webform revisions'

@@ -1,0 +1,7 @@
+uuid: ea265eef-ec04-4ab2-967a-f5929f24fb80
+langcode: en
+status: false
+dependencies: {  }
+formId: node_academic_school_form
+captchaType: default
+label: null

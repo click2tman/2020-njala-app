@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Visual styles for Magazine+'s share links component.
+ */
+.share-links {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.share-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+.share-links ul li {
+  margin-bottom: 10px;
+  white-space: normal;
+}
+.share-links ul li a {
+  line-height: 1;
+  white-space: normal;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f4f4f4;
+  font-size: 18px;
+}
+.share-links ul li a:hover {
+  color: #000;
+}
+.share-links ul li a i {
+  padding: 0;
+}

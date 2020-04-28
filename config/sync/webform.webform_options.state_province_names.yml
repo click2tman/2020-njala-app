@@ -1,0 +1,14 @@
+uuid: 0ffcd263-d0db-4e89-9c63-a835ebfb1420
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: v5hSmubCKajaV9shdCW9fgP5-X03SuIjHbb0ODElqI0
+id: state_province_names
+label: 'State/Province names'
+category: Geographic
+likert: false
+options: "Bo: 'Bo - South - Sierra Leone'\nBonthe: 'Bonthe - South - Sierra Leone'\nMoyamba: 'Moyamba - South - Sierra Leone'\nPujehun: 'Pujehun - South - Sierra Leone'\nKailahun: 'Kailahun - East - Sierra Leone'\nKenema: 'Kenema - East - Sierra Leone'\nKono: 'Kono - East - Sierra Leone'\nTonkolili: 'Tonkolili - North - Sierra Leone'\nBombali: 'Bombali - North - Sierra Leone'\nFalaba: 'Falaba - North - Sierra Leone'\nKoinadugu: 'Koinadugu - North - Sierra Leone'\nKarene: 'Karene - North West - Sierra Leone'\n'Port Loko': 'Port Loko - North West - Sierra Leone'\nKambia: 'Kambia - North West - Sierra Leone'\n'Western Area Rural': 'Western Area Rural - West - Sierra Leone'\n'Western Area Urban': 'Western Area Urban - West - Sierra Leone'\n"

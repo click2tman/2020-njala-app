@@ -1,0 +1,21 @@
+uuid: ff63cda1-918f-4806-bd5f-0634c2554bde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tp_slideshow_text
+    - node.type.tp_slideshow_entry
+  module:
+    - text
+id: node.tp_slideshow_entry.field_tp_slideshow_text
+field_name: field_tp_slideshow_text
+entity_type: node
+bundle: tp_slideshow_entry
+label: 'Slideshow text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
